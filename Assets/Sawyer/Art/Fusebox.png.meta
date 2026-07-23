@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b244546d321fda844a2723a82a4eb757
+guid: b80706c8b9620c444bb254d78f55ae25
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1972837275164087035
-    second: ChickenBody_0
+      213: 3686920119043506166
+    second: Fusebox_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChickenBody_0
+      name: Fusebox_0
       rect:
         serializedVersion: 2
-        x: 114
-        y: 186
-        width: 284
-        height: 140
+        x: 97
+        y: 50
+        width: 318
+        height: 413
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bf21ec99c0de06b10800000000000000
-      internalID: 1972837275164087035
+      spriteID: 6ff34da60529a2330800000000000000
+      internalID: 3686920119043506166
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChickenBody_0: 1972837275164087035
+      Fusebox_0: 3686920119043506166
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
