@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Camera mainCam;
 
-    [SerializeField] private GameObject hitBox, attackBox;
+    [SerializeField] private GameObject hitBox, attackBox, chicken, vampire;
 
     [SerializeField] private Switch switchForm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -43,6 +43,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentForm == Forms.Vampire)
+        {
+            vampire.SetActive(true);
+            chicken.SetActive(false);
+        }
+        if (currentForm == Forms.Chicken)
+        {
+            vampire.SetActive(false);
+            chicken.SetActive(true);
+        }
         if (dashing == true)
         {
             canAttack = false;
@@ -72,7 +82,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Breaker") && currentForm == Forms.Chicken && dashing == true)
@@ -132,25 +141,12 @@ public class PlayerMovement : MonoBehaviour
         {
             yield return new WaitForSeconds(cooldownTime);
             rb.linearVelocity = Vector2.zero;
-            if (currentForm == Forms.Chicken)
-            {
-                canDash = false;
-                rb.linearVelocity = Vector2.zero;
-                dashing = true;
-                yield return new WaitForSeconds(5f);
-                dashing = false;
-                canDash = true;
-                canAttack = true;
-            }
-            else
-            {
-                canDash = true;
-                canAttack = true;
-            }
+            canDash = true;
+            canAttack = true;
         }
         if (latched == true)
         {
-            yield return new WaitForSeconds(1.75f);
+            yield return new WaitForSeconds(0.6f);
             latched = false;
             dashing = false;
             canAttack = true;
@@ -168,7 +164,7 @@ public class PlayerMovement : MonoBehaviour
             hitBox.SetActive(false);
             rb.linearVelocity = Vector2.zero;
             transform.position = target.transform.position;
-            Destroy(target, 1.8f);
+            Destroy(target, 0.5f);
             //particle effects
         }
     }
