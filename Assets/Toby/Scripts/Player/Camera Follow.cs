@@ -10,6 +10,7 @@ public class CameraFollow : MonoBehaviour
     public Transform target;
     public Vector3 offset;
     public Vector3 dashOffset;
+    public bool kill;
     [Range(1, 10)]
     public float smoothFactor;
 
@@ -51,6 +52,10 @@ public class CameraFollow : MonoBehaviour
         {
             this.GetComponent<Transform>().position = Camera.main.transform.position;
         }
+        if (kill == true)
+        {
+
+        }
     }
 
     void Follow()
@@ -68,14 +73,9 @@ public class CameraFollow : MonoBehaviour
 
     void Kill()
     {
-    
+        kill = true;
     }
 
-    public IEnumerator SetOrthographicSize(float newSize)
-    {
-        float oldSize = cam.orthographicSize;
-        cam.orthographicSize = newSize;
-    }
     public void MouseFollow()
     {
         Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
