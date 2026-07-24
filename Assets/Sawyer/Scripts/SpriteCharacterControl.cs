@@ -112,7 +112,7 @@ public class SpriteCharacterControl : MonoBehaviour
         }
     }
 
-    public void Attack()
+    public void Attack(float timeToAttack)
     {
         
     }
