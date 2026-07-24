@@ -1203,18 +1203,6 @@ MonoBehaviour:
   switchForm: {fileID: 839375320}
   hits: []
   sprite: {fileID: 0}
-  targetPoints:
-  - {fileID: 839375316}
-  - {fileID: 490189510}
-  - {fileID: 104669159}
-  - {fileID: 2008031544}
-  - {fileID: 1815762763}
-  - {fileID: 611843289}
-  - {fileID: 224363644}
-  - {fileID: 876997265}
-  - {fileID: 1221597879}
-  - {fileID: 1052964977}
-  - {fileID: 1233001401}
 --- !u!4 &839375316
 Transform:
   m_ObjectHideFlags: 0
