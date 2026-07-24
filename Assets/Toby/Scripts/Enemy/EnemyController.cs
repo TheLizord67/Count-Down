@@ -156,7 +156,7 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSeconds(timeToAttack);
         exclamationPoint.SetActive(false);
         hitBox.SetActive(true);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         hitBox.SetActive(false);
         if (player.currentForm == Forms.Chicken)
         {

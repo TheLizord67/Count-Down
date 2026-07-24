@@ -15,11 +15,13 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private GameObject enemy;
 
+    [SerializeField] private float spawnSpeed;
+
     [SerializeField] public int maxEnemiesToSpawn, minEnemiesToSpawn, enemiesToSpawn, spawnLimit, amountSpawned;
     void Start()
     {
         player = FindAnyObjectByType<PlayerMovement>();
-        InvokeRepeating("Spawn", 0f, 10f);
+        InvokeRepeating("Spawn", 0f, spawnSpeed);
     }
 
     // Update is called once per frame
@@ -72,5 +74,6 @@ public class RoomManager : MonoBehaviour
         spawning = false;
         connectedRooms = (List<RoomManager>)connectedRooms.Shuffle();
         connectedRooms[0].fuseBox.off = true;
+        player.fuseBoxOn = connectedRooms[0].fuseBox.transform;
     }
 }

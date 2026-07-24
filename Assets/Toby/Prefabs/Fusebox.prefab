@@ -153,6 +153,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Fusebox
   connections: []
   off: 0
-  onSprite: {fileID: 3686920119043506166, guid: b80706c8b9620c444bb254d78f55ae25, type: 3}
-  offSprite: {fileID: 2140328032154766952, guid: 18329948197a2564f923a644abd317e3, type: 3}
+  onSprite: {fileID: 2140328032154766952, guid: 18329948197a2564f923a644abd317e3, type: 3}
+  offSprite: {fileID: 3686920119043506166, guid: b80706c8b9620c444bb254d78f55ae25, type: 3}
   _renderer: {fileID: 4360139401721871120}

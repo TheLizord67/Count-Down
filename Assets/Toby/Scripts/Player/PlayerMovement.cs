@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public SpriteCharacterControl sprite;
 
     [SerializeField] public RoomManager currentRoom;
+
+    [SerializeField] public Transform fuseBoxOn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -49,6 +51,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (currentRoom.fuseBox.off == true)
+        {
+            fuseBoxOn = currentRoom.fuseBox.transform;
+        }
         if (rb.linearVelocityX >= 0.1)
         {
             if (currentForm == Forms.Vampire)

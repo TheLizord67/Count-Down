@@ -85,15 +85,7 @@ public class Switch : MonoBehaviour
     public IEnumerator Count(GameObject text)
     {
         //play sound
-        if (text == down)
-        {
-            StartCoroutine(FlickerText(text));
-            yield return new WaitForSeconds(3f);
-        }
-        else
-        {
-            text.SetActive(true);
-        }
+        text.SetActive(true);
         if (text == down)
         {
             FindEnemies();
