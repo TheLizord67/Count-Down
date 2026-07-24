@@ -26,8 +26,8 @@ Transform:
   m_GameObject: {fileID: 493253034386627985}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6980002, y: -1.063, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.6980002, y: -1.063, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276966245305514781}
@@ -117,8 +117,8 @@ Transform:
   m_GameObject: {fileID: 2901660149150528733}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.128, y: -0.8629999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -0.128, y: -0.8629999, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276966245305514781}
@@ -207,13 +207,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3593037975561693549}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.2426953, w: -0.9701026}
-  m_LocalPosition: {x: -0.7, y: -0.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.6427876, w: 0.7660445}
+  m_LocalPosition: {x: 1.078, y: 0.361, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276966245305514781}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -28.091}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 80}
 --- !u!212 &4306559926003954683
 SpriteRenderer:
   serializedVersion: 2
@@ -554,8 +554,8 @@ Transform:
   m_GameObject: {fileID: 5462695201372924616}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.032000095, y: -0.3529999, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.03200009, y: -0.3529999, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276966245305514781}
@@ -682,8 +682,8 @@ MonoBehaviour:
   headBobSpeed: 6
   bodyBobAmount: 1
   bodyBobSpeed: 7
-  weaponBobAmount: 0
-  weaponBobSpeed: 0
+  weaponBobAmount: 2.2
+  weaponBobSpeed: 2.7
   footMaxDistance: 0.95
   footStepSpeed: 30
   footRaiseAmount: 20
@@ -1112,8 +1112,8 @@ Transform:
   m_GameObject: {fileID: 7765740270592311318}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.031, y: 0.48, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.031, y: 0.48, z: 0}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1276966245305514781}

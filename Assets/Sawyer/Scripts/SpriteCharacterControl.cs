@@ -18,6 +18,8 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private float footMaxDistance;
     [SerializeField] private float footStepSpeed;
     [SerializeField] private float footRaiseAmount;
+    [SerializeField] private bool isChicken;
+    [SerializeField] private bool isPlayer;
     [SerializeField] private bool isDead;
     [SerializeField] private Color deadTint;
 
@@ -53,10 +55,6 @@ public class SpriteCharacterControl : MonoBehaviour
         if (isDead)
         {
             Die();
-        }
-        else
-        {
-            Attack(0.5f);
         }
     }
 
@@ -126,7 +124,7 @@ public class SpriteCharacterControl : MonoBehaviour
                 if (Time.time - lastAttackStartTime < attackTime)
                 {
                     Debug.Log("A");
-                    weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(0.8f, 0.3f, 0), 3f * Time.deltaTime);
+                    weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(1.1f, 0.3f, 0), 3f * Time.deltaTime);
                 }
                 else if (Time.time - (lastAttackStartTime + 1f) < attackTime)
                 {
@@ -151,8 +149,8 @@ public class SpriteCharacterControl : MonoBehaviour
 
     public void Attack(float timeToAttack)
     {
-        weapon.transform.localPosition = weaponPos - new Vector3(0, 0.3f, 0);
-        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -65);
+        weapon.transform.localPosition = weaponPos - new Vector3(-0.2f, 0.3f, 0);
+        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -75);
         lastAttackStartTime = Time.time;
         attackTime = timeToAttack;
         isAttacking = true;
@@ -160,15 +158,20 @@ public class SpriteCharacterControl : MonoBehaviour
 
     public void Die()
     {
+        if (!isPlayer)
+        {
         body.GetComponent<SpriteRenderer>().color = deadTint;
         weapon.GetComponent<SpriteRenderer>().color = deadTint;
-
+        }
         isDead = true;
-        body.transform.localRotation = Quaternion.Euler(0, 0, -90);
         body.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
         blood.gameObject.SetActive(true);
-        foot1.gameObject.SetActive(false);
-        foot2.gameObject.SetActive(false);
+        if (!isChicken)
+        {
+            body.transform.localRotation = Quaternion.Euler(0, 0, -90);
+            foot1.gameObject.SetActive(false);
+            foot2.gameObject.SetActive(false);
+        }
         head.gameObject.SetActive(false);
         weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, 130);
         weapon.transform.localPosition = weaponPos - new Vector3(0, 0.5f, 0);
