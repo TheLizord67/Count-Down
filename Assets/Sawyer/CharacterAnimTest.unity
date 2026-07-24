@@ -220,6 +220,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2329703131644459958, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
+      propertyPath: hasWeapon
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2329703131644459958, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
       propertyPath: footStepSpeed
       value: 20
       objectReference: {fileID: 0}
@@ -230,6 +234,10 @@ PrefabInstance:
     - target: {fileID: 2329703131644459958, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
       propertyPath: footRaiseAmount
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828694236228368654, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5054255007927957922, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
       propertyPath: m_LocalPosition.x
@@ -302,6 +310,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2329703131644459958, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
       propertyPath: isDead
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828694236228368654, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
+      propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5054255007927957922, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}

@@ -9,7 +9,6 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private GameObject foot2;
     [SerializeField] private GameObject weapon;
     [SerializeField] private GameObject blood;
-    [SerializeField] private bool hasWeapon;
     [SerializeField] private float headBobAmount;
     [SerializeField] private float headBobSpeed;
     [SerializeField] private float bodyBobAmount;
@@ -30,6 +29,9 @@ public class SpriteCharacterControl : MonoBehaviour
     private Vector3 foot1Target;
     private Vector3 foot2Target;
     private bool facingFlipped;
+    private float lastAttackStartTime = -10;
+    private float attackTime;
+    private bool isAttacking;
 
     private Vector3 weaponPos;
     private Quaternion weaponRot;
@@ -49,6 +51,10 @@ public class SpriteCharacterControl : MonoBehaviour
         if (isDead)
         {
             Die();
+        }
+        else
+        {
+            Attack(0.5f);
         }
     }
 
@@ -92,21 +98,44 @@ public class SpriteCharacterControl : MonoBehaviour
                 +
                 Vector3.Lerp(foot2.transform.position, foot2Target, footStepSpeed * Time.deltaTime);
 
-            if (!facingFlipped && lastFramePos.x - transform.position.x > 0.1 * Time.deltaTime)
+            //FlipFacing
+            if (!facingFlipped && lastFramePos.x - transform.position.x > 0.05 * Time.deltaTime)
             {
                 facingFlipped = true;
                 transform.localScale = new Vector3(-1, 1, 1);
                 footCenterFloorPos = new Vector3(footCenterFloorPos.x * -1, footCenterFloorPos.y, footCenterFloorPos.z);
             }
-            else if (facingFlipped && lastFramePos.x - transform.position.x < -0.1 * Time.deltaTime)
+            else if (facingFlipped && lastFramePos.x - transform.position.x < -0.05 * Time.deltaTime)
             {
                 facingFlipped = false;
                 transform.localScale = new Vector3(1, 1, 1);
                 footCenterFloorPos = new Vector3(footCenterFloorPos.x * -1, footCenterFloorPos.y, footCenterFloorPos.z);
             }
 
+            //Attack Frames
+            if (isAttacking)
+            {
+                if (Time.time - lastAttackStartTime < attackTime)
+                {
+                    Debug.Log("A");
+                    weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(0.8f, 0.3f, 0), 3f * Time.deltaTime);
+                }
+                else if (Time.time - (lastAttackStartTime + 1f) < attackTime)
+                {
+                    Debug.Log("B");
+                    weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(-0.7f, 0.3f, 0), 45f * Time.deltaTime);
+                }
+                else
+                {
+                    Debug.Log("C");
+                    isAttacking = false;
+                    weapon.transform.localPosition = weaponPos;
+                    weapon.transform.localRotation = weaponRot;
+                }
+            }
 
-            lastFrameFoot1Pos = foot1.transform.position;
+                //LastFrameStuff
+                lastFrameFoot1Pos = foot1.transform.position;
             lastFrameFoot2Pos = foot2.transform.position;
             lastFramePos = transform.position;
         }
@@ -114,8 +143,13 @@ public class SpriteCharacterControl : MonoBehaviour
 
     public void Attack(float timeToAttack)
     {
-        
+        weapon.transform.localPosition = weaponPos - new Vector3(0, 0.3f, 0);
+        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -65);
+        lastAttackStartTime = Time.time;
+        attackTime = timeToAttack;
+        isAttacking = true;
     }
+
     public void Die()
     {
         body.GetComponent<SpriteRenderer>().color = deadTint;
@@ -128,7 +162,7 @@ public class SpriteCharacterControl : MonoBehaviour
         foot1.gameObject.SetActive(false);
         foot2.gameObject.SetActive(false);
         head.gameObject.SetActive(false);
-        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -90);
-        weapon.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
+        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, 130);
+        weapon.transform.localPosition = weaponPos - new Vector3(0, 0.5f, 0);
     }
 }
