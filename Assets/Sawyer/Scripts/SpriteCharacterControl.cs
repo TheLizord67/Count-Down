@@ -126,7 +126,7 @@ public class SpriteCharacterControl : MonoBehaviour
                     Debug.Log("A");
                     weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(1.1f, 0.3f, 0), 3f * Time.deltaTime);
                 }
-                else if (Time.time - (lastAttackStartTime + 1f) < attackTime)
+                else if (Time.time - (lastAttackStartTime + 0.5f) < attackTime)
                 {
                     Debug.Log("B");
                     weapon.transform.localPosition = Vector3.Lerp(weapon.transform.localPosition, weaponPos - new Vector3(-0.7f, 0.3f, 0), 45f * Time.deltaTime);
