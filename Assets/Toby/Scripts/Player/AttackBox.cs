@@ -10,9 +10,10 @@ public class AttackBox : MonoBehaviour
         {
             //particles
             player.mainCam.GetComponent<CameraFollow>().kill = true;
+            collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;
-            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
@@ -23,9 +24,10 @@ public class AttackBox : MonoBehaviour
         {
             //particles
             player.mainCam.GetComponent<CameraFollow>().kill = true;
+            collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;
-            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<CapsuleCollider2D>().enabled = false;
             collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }

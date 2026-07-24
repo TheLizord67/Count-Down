@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
 
     private bool reachedEndOfPath = false;
 
-    private Seeker seeker;
+    public Seeker seeker;
     private Rigidbody2D rb;
     private GameObject tempObject;
 
@@ -93,8 +93,6 @@ public class EnemyController : MonoBehaviour
     {
         if (player.currentForm == Forms.Chicken && state != States.Attacking)
         {
-            if (state == States.Running)
-                ChooseTarget();
             state = States.Following;
         }
         if (player.currentForm == Forms.Vampire)
@@ -113,6 +111,7 @@ public class EnemyController : MonoBehaviour
 
     public void Following()
     {
+        ChooseTarget();
         if (path == null)
         {
             return;
@@ -199,7 +198,7 @@ public class EnemyController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
         
-        if (playerDistance <= 5f)
+        if (playerDistance <= 7f)
         {
             FindSecondRetreat();
         }
@@ -251,37 +250,38 @@ public class EnemyController : MonoBehaviour
 
     public void ChooseTarget()
     {
-        //if (attackStyle == AttackStyles.Direct)
-            //target = player.transform;
+        if (attackStyle == AttackStyles.Direct)
+        target = player.transform;
 
-        //if (attackStyle == AttackStyles.Forward)
-        //{
-            tempObject = new GameObject();
-
+        if (attackStyle == AttackStyles.Forward)
+        {
+            target = player.transform;
+            //tempObject = new GameObject();
+        }
             //check for wall and don't pathfind into the middle of a wall or beyond a wall just because player moves towards wall
-            RaycastHit hitInfo;
+            //RaycastHit hitInfo;
 
-            if (Physics.Raycast(player.transform.position, player.GetComponent<Rigidbody>().linearVelocity.normalized, out hitInfo, Mathf.Abs((transform.position - player.transform.position).magnitude), LayerMask.GetMask("Obstacle")))
-            {
-                tempObject.transform.position = player.transform.position + player.GetComponent<Rigidbody>().linearVelocity.normalized * hitInfo.distance/2;
-            }
-            else
-                tempObject.transform.position = player.transform.position + player.GetComponent<Rigidbody>().linearVelocity.normalized * Mathf.Abs((transform.position - player.transform.position).magnitude)/2;
+            //if (Physics.Raycast(player.transform.position, player.GetComponent<Rigidbody>().linearVelocity.normalized, out hitInfo, Mathf.Abs((transform.position - player.transform.position).magnitude), LayerMask.GetMask("Obstacle")))
+            //{
+                //tempObject.transform.position = player.transform.position + player.GetComponent<Rigidbody>().linearVelocity.normalized * hitInfo.distance/2;
+            //}
+            //else
+            //{
+                //tempObject.transform.position = player.transform.position + player.GetComponent<Rigidbody>().linearVelocity.normalized * Mathf.Abs((transform.position - player.transform.position).magnitude)/2;
 
-            target = tempObject.transform;
+                //target = tempObject.transform;
+            //}   
 
         //}
         
-        //if (attackStyle == AttackStyles.Left)
-        //{
-            //target = player.transform;
-        //}
+        if (attackStyle == AttackStyles.Left)
+        {
+            target = player.transform;
+        }
         
-        //if (attackStyle == AttackStyles.Right)
-        //{
-            //target = player.transform;
-        //}
-
-
+        if (attackStyle == AttackStyles.Right)
+        {
+            target = player.transform;
+        }
     }
 }

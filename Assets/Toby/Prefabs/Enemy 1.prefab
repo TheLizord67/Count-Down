@@ -682,6 +682,8 @@ MonoBehaviour:
   headBobSpeed: 6
   bodyBobAmount: 1
   bodyBobSpeed: 7
+  weaponBobAmount: 0
+  weaponBobSpeed: 0
   footMaxDistance: 0.95
   footStepSpeed: 30
   footRaiseAmount: 20
@@ -861,7 +863,9 @@ MonoBehaviour:
   hitBox: {fileID: 4658418790302604719}
   retreatPoints: []
   sprite: {fileID: 6017005904352431940}
+  seeker: {fileID: 0}
   state: 0
+  attackStyle: 0
   chomp: {fileID: 4653246744186684732}
 --- !u!70 &2026844005910717463
 CapsuleCollider2D:

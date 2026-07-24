@@ -233,10 +233,11 @@ public class PlayerMovement : MonoBehaviour
         target.GetComponent<EnemyController>().chomp.SetActive(true);
         mainCam.GetComponent<CameraFollow>().kill = true;
         yield return new WaitForSeconds(0.5f);
+        target.GetComponent<EnemyController>().seeker.enabled = false;
         target.GetComponent<EnemyController>().chomp.SetActive(false);
         target.GetComponent<EnemyController>().sprite.Die();
         target.GetComponent<EnemyController>().enabled = false;
-        target.GetComponent<BoxCollider2D>().enabled = false;
+        target.GetComponent<CapsuleCollider2D>().enabled = false;
         target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
     }
     public void LookAtMouse()
