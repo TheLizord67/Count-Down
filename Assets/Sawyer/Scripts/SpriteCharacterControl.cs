@@ -18,6 +18,7 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private float footStepSpeed;
     [SerializeField] private float footRaiseAmount;
     [SerializeField] private bool isDead;
+    [SerializeField] private Color deadTint;
 
     private Vector3 headStartPos;
     private Vector3 bodyStartPos;
@@ -43,11 +44,8 @@ public class SpriteCharacterControl : MonoBehaviour
         lastFramePos = transform.position;
         foot1Target = foot1.transform.position;
         foot2Target = foot2.transform.position;
-        if (hasWeapon)
-        {
-            weaponPos = weapon.transform.localPosition;
-            weaponRot = weapon.transform.localRotation;
-        }
+        weaponPos = weapon.transform.localPosition;
+        weaponRot = weapon.transform.localRotation;
         if (isDead)
         {
             Die();
@@ -116,13 +114,13 @@ public class SpriteCharacterControl : MonoBehaviour
 
     public void Attack()
     {
-        if(hasWeapon)
-        {
-
-        }
+        
     }
     public void Die()
     {
+        body.GetComponent<SpriteRenderer>().color = deadTint;
+        weapon.GetComponent<SpriteRenderer>().color = deadTint;
+
         isDead = true;
         body.transform.localRotation = Quaternion.Euler(0, 0, -90);
         body.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
@@ -130,10 +128,7 @@ public class SpriteCharacterControl : MonoBehaviour
         foot1.gameObject.SetActive(false);
         foot2.gameObject.SetActive(false);
         head.gameObject.SetActive(false);
-        if (hasWeapon)
-        {
-            weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -90);
-            weapon.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
-        }
+        weapon.transform.localRotation = weaponRot * Quaternion.Euler(0, 0, -90);
+        weapon.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
     }
 }
