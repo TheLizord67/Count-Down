@@ -1179,14 +1179,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   manager: {fileID: 0}
-  vampSpeed: 4
+  vampSpeed: 8
   vampDash: 15
   vampDashDuration: 0.2
-  vampDashCooldown: 1
-  chickenSpeed: 6
-  chickenDash: 15
+  vampDashCooldown: 0.5
+  chickenSpeed: 15
+  chickenDash: 25
   chickenDashDuration: 0.5
-  chickenDashCooldown: 2
+  chickenDashCooldown: 0.5
   speedCap: 10
   rotateSpeed: 10
   dashing: 0
