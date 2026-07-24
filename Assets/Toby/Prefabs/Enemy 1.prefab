@@ -678,7 +678,6 @@ MonoBehaviour:
   foot2: {fileID: 493253034386627985}
   weapon: {fileID: 3593037975561693549}
   blood: {fileID: 7324571132748535397}
-  hasWeapon: 0
   headBobAmount: 2
   headBobSpeed: 6
   bodyBobAmount: 1
@@ -699,9 +698,9 @@ GameObject:
   - component: {fileID: 3927821699871234332}
   - component: {fileID: 301996808158827290}
   - component: {fileID: 2077394670464984141}
-  - component: {fileID: 4371447990625146693}
   - component: {fileID: 7259416316609452283}
   - component: {fileID: 7235645776078137864}
+  - component: {fileID: 2026844005910717463}
   m_Layer: 6
   m_Name: Enemy 1
   m_TagString: Enemy
@@ -811,52 +810,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &4371447990625146693
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7160090809763421518}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: -0.073461294, y: 0.024577856}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.669313, y: 2.6159644}
-  m_EdgeRadius: 0
 --- !u!114 &7259416316609452283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,6 +863,43 @@ MonoBehaviour:
   sprite: {fileID: 6017005904352431940}
   state: 0
   chomp: {fileID: 4653246744186684732}
+--- !u!70 &2026844005910717463
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7160090809763421518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.0259583, y: 0.18170881}
+  m_Size: {x: 1.2941947, y: 2.332531}
+  m_Direction: 0
 --- !u!1 &7324571132748535397
 GameObject:
   m_ObjectHideFlags: 0

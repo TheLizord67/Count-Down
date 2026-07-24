@@ -96,7 +96,12 @@ public class Switch : MonoBehaviour
         }
         if (text == down)
         {
+            FindEnemies();
             player.currentForm = Forms.Chicken;
+            foreach (var e in enemies)
+            {
+                e.ChooseTarget();
+            }
             foreach (var light in lights)
             {
                 light.SetActive(true);

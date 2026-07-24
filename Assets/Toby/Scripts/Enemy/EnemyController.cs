@@ -78,7 +78,6 @@ public class EnemyController : MonoBehaviour
         if (player.currentForm == Forms.Chicken && state != States.Attacking)
         {
             state = States.Following;
-            target = player.gameObject.transform;
         }
         if (player.currentForm == Forms.Vampire)
         {
@@ -117,7 +116,7 @@ public class EnemyController : MonoBehaviour
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
-        float targetDistance = Vector2.Distance(rb.position, target.position);
+        float targetDistance = Vector2.Distance(rb.position, player.gameObject.transform.position);
 
         if (distance < nextWaypointDistance)
         {
@@ -230,5 +229,10 @@ public class EnemyController : MonoBehaviour
             }
         }
         state = States.Running;
+    }
+
+    public void ChooseTarget()
+    {
+       
     }
 }
