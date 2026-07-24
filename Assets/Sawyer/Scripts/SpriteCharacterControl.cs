@@ -21,8 +21,10 @@ public class SpriteCharacterControl : MonoBehaviour
 
     private Vector3 lastFrameFoot1Pos;
     private Vector3 lastFrameFoot2Pos;
+    private Vector3 lastFramePos;
     private Vector3 foot1Target;
     private Vector3 foot2Target;
+    private bool facingFlipped;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -31,6 +33,7 @@ public class SpriteCharacterControl : MonoBehaviour
         footCenterFloorPos = (foot1.transform.localPosition + foot2.transform.localPosition)/ 2;
         lastFrameFoot1Pos = foot1.transform.position;
         lastFrameFoot2Pos = foot2.transform.position;
+        lastFramePos = transform.position;
         foot1Target = foot1.transform.position;
         foot2Target = foot2.transform.position;
     }
@@ -69,7 +72,22 @@ public class SpriteCharacterControl : MonoBehaviour
             +
             Vector3.Lerp(foot2.transform.position, foot2Target, footStepSpeed * Time.deltaTime);
 
+        if (!facingFlipped && lastFramePos.x - transform.position.x > 0.1 * Time.deltaTime)
+        {
+            facingFlipped = true;
+            transform.localScale = new Vector3(-1, 1, 1);
+            footCenterFloorPos = new Vector3(footCenterFloorPos.x * -1, footCenterFloorPos.y, footCenterFloorPos.z);
+        }
+        else if (facingFlipped && lastFramePos.x - transform.position.x < - 0.1 * Time.deltaTime)
+        {
+            facingFlipped = false;
+            transform.localScale = new Vector3(1, 1, 1);
+            footCenterFloorPos = new Vector3(footCenterFloorPos.x * -1, footCenterFloorPos.y, footCenterFloorPos.z);
+        }
+
+
         lastFrameFoot1Pos = foot1.transform.position;
         lastFrameFoot2Pos = foot2.transform.position;
+        lastFramePos = transform.position;
     }
 }
