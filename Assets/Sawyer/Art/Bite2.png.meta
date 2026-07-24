@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: 3123d9ad099b27244bf4ffd7fdaf1ddb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3649676671966244060
+    second: Bite2Incase_0
+  - first:
+      213: 6690819456868925858
+    second: Bite2Incase_1
+  - first:
+      213: 7195332563880959837
+    second: Bite2Incase_2
+  - first:
+      213: -7871212695193132951
+    second: Bite2Incase_3
+  - first:
+      213: 1055597282148456689
+    second: Bite2Incase_4
+  - first:
+      213: -1269884304736126331
+    second: Bite2Incase_5
+  - first:
+      213: -4722166710104675323
+    second: Bite2Incase_6
+  - first:
+      213: 2204620730711305169
+    second: Bite2Incase_7
+  - first:
+      213: 3716100676544981617
+    second: Bite2Incase_8
+  - first:
+      213: -3523576145706406783
+    second: Bite2Incase_9
+  - first:
+      213: -4648492189441324855
+    second: Bite2Incase_10
+  - first:
+      213: -6591299079145220402
+    second: Bite2Incase_11
+  - first:
+      213: -1819740258498668912
+    second: Bite2Incase_12
+  - first:
+      213: -5854679016654753495
+    second: Bite2Incase_13
+  - first:
+      213: -6655013215377204758
+    second: Bite2Incase_14
+  - first:
+      213: -5308086097342648507
+    second: Bite2Incase_15
+  - first:
+      213: -7315527220016836442
+    second: Bite2Incase_16
+  - first:
+      213: 4066494234614916050
+    second: Bite2Incase_17
+  - first:
+      213: 916550883419112552
+    second: Bite2Incase_18
+  - first:
+      213: 2309283176535277304
+    second: Bite2Incase_19
+  - first:
+      213: 2308640080232168671
+    second: Bite2Incase_20
+  - first:
+      213: 7620048002045643389
+    second: Bite2Incase_21
+  - first:
+      213: 4909373130211334306
+    second: Bite2Incase_22
+  - first:
+      213: 2074203251220323669
+    second: Bite2Incase_23
+  - first:
+      213: -7159705599715639078
+    second: Bite2Incase_24
+  - first:
+      213: 58309272958492800
+    second: Bite2Incase_25
+  - first:
+      213: -1079524420847465015
+    second: Bite2Incase_26
+  - first:
+      213: 3660838441772650831
+    second: Bite2Incase_27
+  - first:
+      213: -885260154702555991
+    second: Bite2Incase_28
+  - first:
+      213: 7570235332943625098
+    second: Bite2Incase_29
+  - first:
+      213: -9085971930462573583
+    second: Bite2Incase_30
+  - first:
+      213: 7315831167396089625
+    second: Bite2Incase_31
+  - first:
+      213: 2686592920701184102
+    second: Bite2Incase_32
+  - first:
+      213: 1625127422395188545
+    second: Bite2Incase_33
+  - first:
+      213: 6627131883891808252
+    second: Bite2Incase_34
+  - first:
+      213: 430503340621876696
+    second: Bite2Incase_35
+  - first:
+      213: -5986626837500872027
+    second: Bite2Incase_36
+  - first:
+      213: 3885692671279160042
+    second: Bite2Incase_37
+  - first:
+      213: 5007459884123975227
+    second: Bite2Incase_38
+  - first:
+      213: 8403137033622402884
+    second: Bite2Incase_39
+  - first:
+      213: -6331842875020831418
+    second: Bite2Incase_40
+  - first:
+      213: -7922969356205053307
+    second: Bite2Incase_41
+  - first:
+      213: 8777183651241387929
+    second: Bite2Incase_42
+  - first:
+      213: 1528250084879327331
+    second: Bite2Incase_43
+  - first:
+      213: 3758230917115863047
+    second: Bite2Incase_44
+  - first:
+      213: -3334007615599490771
+    second: Bite2Incase_45
+  - first:
+      213: 7933725341038147265
+    second: Bite2Incase_46
+  - first:
+      213: -3710623847464182143
+    second: Bite2Incase_47
+  - first:
+      213: -9047862671955300222
+    second: Bite2Incase_48
+  - first:
+      213: 9153142050956528215
+    second: Bite2Incase_49
+  - first:
+      213: -4254797512462632884
+    second: Bite2Incase_50
+  - first:
+      213: 3689172798365256863
+    second: Bite2Incase_51
+  - first:
+      213: -7584055163305948185
+    second: Bite2Incase_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Bite2Incase_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 527
+        width: 137
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4231c66576eb95dc0800000000000000
+      internalID: -3649676671966244060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 625
+        width: 23
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1c1f6b8d09adc50800000000000000
+      internalID: 6690819456868925858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 627
+        width: 25
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fdce628d4fad360800000000000000
+      internalID: 7195332563880959837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 613
+        width: 27
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 960e777d1c5d3c290800000000000000
+      internalID: -7871212695193132951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_4
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 427
+        width: 77
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f89354a22c36ae00800000000000000
+      internalID: 1055597282148456689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_5
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 628
+        width: 42
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58afb56f3f6706ee0800000000000000
+      internalID: -1269884304736126331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_6
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 629
+        width: 58
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c2902756e777eb0800000000000000
+      internalID: -4722166710104675323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 409
+        width: 67
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db628ebfd2689e10800000000000000
+      internalID: 2204620730711305169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 596
+        width: 86
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17a6d0760ed329330800000000000000
+      internalID: 3716100676544981617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_9
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 575
+        width: 63
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18c21280a2eb91fc0800000000000000
+      internalID: -3523576145706406783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 565
+        width: 57
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c80c238bfc3d7fb0800000000000000
+      internalID: -4648492189441324855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_11
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 519
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec69033e8600784a0800000000000000
+      internalID: -6591299079145220402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 537
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09695b450ebfeb6e0800000000000000
+      internalID: -1819740258498668912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 366
+        width: 65
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9213c5a247000cea0800000000000000
+      internalID: -5854679016654753495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 496
+        width: 36
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae959e98db4a4a3a0800000000000000
+      internalID: -6655013215377204758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 533
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54fa3b261d3e556b0800000000000000
+      internalID: -5308086097342648507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 531
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a01232b0c60a7a90800000000000000
+      internalID: -7315527220016836442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_17
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 506
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d3656f06f61f6830800000000000000
+      internalID: 4066494234614916050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_18
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 383
+        width: 72
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86444c02c2e38bc00800000000000000
+      internalID: 916550883419112552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_19
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 552
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8febb2f50d83c0020800000000000000
+      internalID: 2309283176535277304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 518
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdcb778dbefe90020800000000000000
+      internalID: 2308640080232168671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 494
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7a0b5df849dfb960800000000000000
+      internalID: 7620048002045643389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_22
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 493
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a81818d9d8912440800000000000000
+      internalID: 4909373130211334306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_23
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 490
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d92fc0edc09cc10800000000000000
+      internalID: 2074203251220323669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_24
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 497
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad00398d0bd93ac90800000000000000
+      internalID: -7159705599715639078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_25
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 515
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0806dcd89f72fc000800000000000000
+      internalID: 58309272958492800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_26
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 526
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd07014242c401f0800000000000000
+      internalID: -1079524420847465015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_27
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 509
+        width: 103
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4114f5ba29edc230800000000000000
+      internalID: 3660838441772650831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 507
+        width: 81
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a49521649ce6b3f0800000000000000
+      internalID: -885260154702555991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_29
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 485
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b373e2de0ee0960800000000000000
+      internalID: 7570235332943625098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_30
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 489
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fbab953ba428e180800000000000000
+      internalID: -9085971930462573583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 480
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f00619fad078560800000000000000
+      internalID: 7315831167396089625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_32
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 445
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6682976f602b84520800000000000000
+      internalID: 2686592920701184102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_33
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 445
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1458c96c7cc9d8610800000000000000
+      internalID: 1625127422395188545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_34
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 497
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7590b165d48fb50800000000000000
+      internalID: 6627131883891808252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 398
+        width: 130
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddc264e18479f500800000000000000
+      internalID: 430503340621876696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_36
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 437
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aab0fb1c9a3beca0800000000000000
+      internalID: -5986626837500872027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_37
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 467
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeadee1b5e0cce530800000000000000
+      internalID: 3885692671279160042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_38
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 459
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e6a34eb321e7540800000000000000
+      internalID: 5007459884123975227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_39
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4473eff3c90fd9470800000000000000
+      internalID: 8403137033622402884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 450
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6459bc4e376c028a0800000000000000
+      internalID: -6331842875020831418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_41
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 465
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58aa7152955fb0290800000000000000
+      internalID: -7922969356205053307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_42
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 473
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997eb9cf602dec970800000000000000
+      internalID: 8777183651241387929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_43
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 384
+        width: 174
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 360613dea5f653510800000000000000
+      internalID: 1528250084879327331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_44
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 416
+        width: 85
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 700e49e6b1be72430800000000000000
+      internalID: 3758230917115863047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_45
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 443
+        width: 59
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29ceb9ecb93bb1d0800000000000000
+      internalID: -3334007615599490771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 411
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6f71ab9214a1e60800000000000000
+      internalID: 7933725341038147265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_47
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 152
+        width: 37
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18eddcc3547318cc0800000000000000
+      internalID: -3710623847464182143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_48
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 384
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280769566d88f6280800000000000000
+      internalID: -9047862671955300222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_49
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 210
+        width: 37
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a44fd233e760f70800000000000000
+      internalID: 9153142050956528215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_50
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 184
+        width: 53
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48f27e843ce3f4c0800000000000000
+      internalID: -4254797512462632884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_51
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 238
+        width: 24
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c48913d13923330800000000000000
+      internalID: 3689172798365256863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bite2Incase_52
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 141
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eb8e22d20600c690800000000000000
+      internalID: -7584055163305948185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Bite2Incase_0: -3649676671966244060
+      Bite2Incase_1: 6690819456868925858
+      Bite2Incase_10: -4648492189441324855
+      Bite2Incase_11: -6591299079145220402
+      Bite2Incase_12: -1819740258498668912
+      Bite2Incase_13: -5854679016654753495
+      Bite2Incase_14: -6655013215377204758
+      Bite2Incase_15: -5308086097342648507
+      Bite2Incase_16: -7315527220016836442
+      Bite2Incase_17: 4066494234614916050
+      Bite2Incase_18: 916550883419112552
+      Bite2Incase_19: 2309283176535277304
+      Bite2Incase_2: 7195332563880959837
+      Bite2Incase_20: 2308640080232168671
+      Bite2Incase_21: 7620048002045643389
+      Bite2Incase_22: 4909373130211334306
+      Bite2Incase_23: 2074203251220323669
+      Bite2Incase_24: -7159705599715639078
+      Bite2Incase_25: 58309272958492800
+      Bite2Incase_26: -1079524420847465015
+      Bite2Incase_27: 3660838441772650831
+      Bite2Incase_28: -885260154702555991
+      Bite2Incase_29: 7570235332943625098
+      Bite2Incase_3: -7871212695193132951
+      Bite2Incase_30: -9085971930462573583
+      Bite2Incase_31: 7315831167396089625
+      Bite2Incase_32: 2686592920701184102
+      Bite2Incase_33: 1625127422395188545
+      Bite2Incase_34: 6627131883891808252
+      Bite2Incase_35: 430503340621876696
+      Bite2Incase_36: -5986626837500872027
+      Bite2Incase_37: 3885692671279160042
+      Bite2Incase_38: 5007459884123975227
+      Bite2Incase_39: 8403137033622402884
+      Bite2Incase_4: 1055597282148456689
+      Bite2Incase_40: -6331842875020831418
+      Bite2Incase_41: -7922969356205053307
+      Bite2Incase_42: 8777183651241387929
+      Bite2Incase_43: 1528250084879327331
+      Bite2Incase_44: 3758230917115863047
+      Bite2Incase_45: -3334007615599490771
+      Bite2Incase_46: 7933725341038147265
+      Bite2Incase_47: -3710623847464182143
+      Bite2Incase_48: -9047862671955300222
+      Bite2Incase_49: 9153142050956528215
+      Bite2Incase_5: -1269884304736126331
+      Bite2Incase_50: -4254797512462632884
+      Bite2Incase_51: 3689172798365256863
+      Bite2Incase_52: -7584055163305948185
+      Bite2Incase_6: -4722166710104675323
+      Bite2Incase_7: 2204620730711305169
+      Bite2Incase_8: 3716100676544981617
+      Bite2Incase_9: -3523576145706406783
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: 91750c0714e8b464cad2ae7f02b5c414
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8314679321358537785
+    second: BiteWhite_0
+  - first:
+      213: -5690907995131590814
+    second: BiteWhite_1
+  - first:
+      213: -6615266765755352725
+    second: BiteWhite_2
+  - first:
+      213: 1714917924601718661
+    second: BiteWhite_3
+  - first:
+      213: -2436583700549768372
+    second: BiteWhite_4
+  - first:
+      213: -4557245363574722177
+    second: BiteWhite_5
+  - first:
+      213: 3828911821579964578
+    second: BiteWhite_6
+  - first:
+      213: 1101154403824783742
+    second: BiteWhite_7
+  - first:
+      213: -3210941776493199955
+    second: BiteWhite_8
+  - first:
+      213: -3683430867043829485
+    second: BiteWhite_9
+  - first:
+      213: 6174166442176757878
+    second: BiteWhite_10
+  - first:
+      213: 7576300066902909051
+    second: BiteWhite_11
+  - first:
+      213: 7980029891083128282
+    second: BiteWhite_12
+  - first:
+      213: 1616394971883503038
+    second: BiteWhite_13
+  - first:
+      213: -3193390844128080163
+    second: BiteWhite_14
+  - first:
+      213: 485099036684835114
+    second: BiteWhite_15
+  - first:
+      213: 3981874858409992473
+    second: BiteWhite_16
+  - first:
+      213: 6846762039971492066
+    second: BiteWhite_17
+  - first:
+      213: -4438030273039017001
+    second: BiteWhite_18
+  - first:
+      213: 4134959398319912508
+    second: BiteWhite_19
+  - first:
+      213: -6372780594435527062
+    second: BiteWhite_20
+  - first:
+      213: 9062434442653143482
+    second: BiteWhite_21
+  - first:
+      213: -2757888737235876483
+    second: BiteWhite_22
+  - first:
+      213: -1309139346743116657
+    second: BiteWhite_23
+  - first:
+      213: -8650055240117166336
+    second: BiteWhite_24
+  - first:
+      213: -7891306383166996786
+    second: BiteWhite_25
+  - first:
+      213: 4549208751561131553
+    second: BiteWhite_26
+  - first:
+      213: 6558073605836002990
+    second: BiteWhite_27
+  - first:
+      213: -1655259312627240895
+    second: BiteWhite_28
+  - first:
+      213: 5693275415525151450
+    second: BiteWhite_29
+  - first:
+      213: -1738993567873508342
+    second: BiteWhite_30
+  - first:
+      213: 3366593552338077887
+    second: BiteWhite_31
+  - first:
+      213: 1344145587145513155
+    second: BiteWhite_32
+  - first:
+      213: -7728151604991076299
+    second: BiteWhite_33
+  - first:
+      213: 53675899271976889
+    second: BiteWhite_34
+  - first:
+      213: 6353589924898945448
+    second: BiteWhite_35
+  - first:
+      213: -1343689939101392551
+    second: BiteWhite_36
+  - first:
+      213: 4711942278256743661
+    second: BiteWhite_37
+  - first:
+      213: -5024952838422871758
+    second: BiteWhite_38
+  - first:
+      213: 6100300764396661425
+    second: BiteWhite_39
+  - first:
+      213: 4642384356263402011
+    second: BiteWhite_40
+  - first:
+      213: 5854070113217674352
+    second: BiteWhite_41
+  - first:
+      213: -8520577626813991495
+    second: BiteWhite_42
+  - first:
+      213: -2062057488879141614
+    second: BiteWhite_43
+  - first:
+      213: -377473641313816417
+    second: BiteWhite_44
+  - first:
+      213: -6666200416715594451
+    second: BiteWhite_45
+  - first:
+      213: 5996754803098352429
+    second: BiteWhite_46
+  - first:
+      213: -7200466505744194601
+    second: BiteWhite_47
+  - first:
+      213: 1487615223657314347
+    second: BiteWhite_48
+  - first:
+      213: -271323558660613748
+    second: BiteWhite_49
+  - first:
+      213: 6991092873583416199
+    second: BiteWhite_50
+  - first:
+      213: 2802427778498489358
+    second: BiteWhite_51
+  - first:
+      213: 4111986924783211474
+    second: BiteWhite_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BiteWhite_0
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 527
+        width: 137
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9349cda2acca36370800000000000000
+      internalID: 8314679321358537785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_1
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 625
+        width: 23
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26740c48455d501b0800000000000000
+      internalID: -5690907995131590814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_2
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 627
+        width: 25
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6974bcfce9d134a0800000000000000
+      internalID: -6615266765755352725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_3
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 613
+        width: 27
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 587e5d234cc9cc710800000000000000
+      internalID: 1714917924601718661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_4
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 427
+        width: 77
+        height: 202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b693fa8048f2ed0800000000000000
+      internalID: -2436583700549768372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_5
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 628
+        width: 42
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7135d5bc7961c0c0800000000000000
+      internalID: -4557245363574722177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_6
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 629
+        width: 58
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a05199e307032530800000000000000
+      internalID: 3828911821579964578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 409
+        width: 67
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7155da9816184f00800000000000000
+      internalID: 1101154403824783742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_8
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 596
+        width: 86
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad39a177717073d0800000000000000
+      internalID: -3210941776493199955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_9
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 575
+        width: 63
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319b42f5423d1ecc0800000000000000
+      internalID: -3683430867043829485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 565
+        width: 57
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6704512caab0fa550800000000000000
+      internalID: 6174166442176757878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_11
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 519
+        width: 77
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b70248715cc642960800000000000000
+      internalID: 7576300066902909051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 537
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add420be7e2cebe60800000000000000
+      internalID: 7980029891083128282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 366
+        width: 65
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdf7d3b9a69e6610800000000000000
+      internalID: 1616394971883503038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_14
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 496
+        width: 36
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddec2c252fbcea3d0800000000000000
+      internalID: -3193390844128080163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_15
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 533
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a29db72f00b6bb600800000000000000
+      internalID: 485099036684835114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_16
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 531
+        width: 15
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911269b3616724730800000000000000
+      internalID: 3981874858409992473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_17
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 506
+        width: 32
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e03126bcc5940f50800000000000000
+      internalID: 6846762039971492066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_18
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 383
+        width: 72
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7db5419faf2f862c0800000000000000
+      internalID: -4438030273039017001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_19
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 552
+        width: 39
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3675813aa3526930800000000000000
+      internalID: 4134959398319912508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_20
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 518
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6eea2550d55f87a0800000000000000
+      internalID: -6372780594435527062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_21
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 494
+        width: 22
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab11b9a5c1c34cd70800000000000000
+      internalID: 9062434442653143482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_22
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 493
+        width: 27
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75410f2ec20ab9d0800000000000000
+      internalID: -2757888737235876483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_23
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 490
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8cb3e343b005dde0800000000000000
+      internalID: -1309139346743116657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_24
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 497
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f5f4dc694d4f780800000000000000
+      internalID: -8650055240117166336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_25
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 515
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecefe8987a27c7290800000000000000
+      internalID: -7891306383166996786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_26
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 526
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12646edb149022f30800000000000000
+      internalID: 4549208751561131553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_27
+      rect:
+        serializedVersion: 2
+        x: 829
+        y: 509
+        width: 103
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea658b6c235f20b50800000000000000
+      internalID: 6558073605836002990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_28
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 507
+        width: 81
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14032b3dc665709e0800000000000000
+      internalID: -1655259312627240895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_29
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 485
+        width: 24
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad257de73d3920f40800000000000000
+      internalID: 5693275415525151450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_30
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 489
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0cd538409addd7e0800000000000000
+      internalID: -1738993567873508342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_31
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 480
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb84b36bffa88be20800000000000000
+      internalID: 3366593552338077887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_32
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 445
+        width: 38
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c897383a4d57a210800000000000000
+      internalID: 1344145587145513155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_33
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 445
+        width: 37
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538542e8f0710c490800000000000000
+      internalID: -7728151604991076299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_34
+      rect:
+        serializedVersion: 2
+        x: 771
+        y: 497
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b71b1d22f1beb000800000000000000
+      internalID: 53675899271976889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 398
+        width: 130
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a93a1abf5c7c2850800000000000000
+      internalID: 6353589924898945448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_36
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 437
+        width: 47
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951689b9e114a5de0800000000000000
+      internalID: -1343689939101392551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_37
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 467
+        width: 27
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de453a1898e246140800000000000000
+      internalID: 4711942278256743661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_38
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 459
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231c6bc4408c34ab0800000000000000
+      internalID: -5024952838422871758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_39
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 450
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ba28e4793f98a450800000000000000
+      internalID: 6100300764396661425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_40
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 450
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1a19e1c9ff0d6040800000000000000
+      internalID: 4642384356263402011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_41
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 465
+        width: 27
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07cf19470c5dd3150800000000000000
+      internalID: 5854070113217674352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_42
+      rect:
+        serializedVersion: 2
+        x: 737
+        y: 473
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b57c98dac3d0c980800000000000000
+      internalID: -8520577626813991495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_43
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 384
+        width: 174
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21dbcec93a91263e0800000000000000
+      internalID: -2062057488879141614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_44
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 416
+        width: 85
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f90ba6129b1f2caf0800000000000000
+      internalID: -377473641313816417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_45
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 443
+        width: 59
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d252b104a06ec73a0800000000000000
+      internalID: -6666200416715594451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_46
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 411
+        width: 51
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b7bc3a8b0c83350800000000000000
+      internalID: 5996754803098352429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_47
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 152
+        width: 37
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d3e40cdcddc21c90800000000000000
+      internalID: -7200466505744194601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_48
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 384
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b28be880a2215a410800000000000000
+      internalID: 1487615223657314347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_49
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 210
+        width: 37
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c89d6d239a01c3cf0800000000000000
+      internalID: -271323558660613748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_50
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 184
+        width: 53
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78354b99de9550160800000000000000
+      internalID: 6991092873583416199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_51
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 238
+        width: 24
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0ce616773934e620800000000000000
+      internalID: 2802427778498489358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteWhite_52
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 141
+        width: 26
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d311c46256b01930800000000000000
+      internalID: 4111986924783211474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BiteWhite_0: 8314679321358537785
+      BiteWhite_1: -5690907995131590814
+      BiteWhite_10: 6174166442176757878
+      BiteWhite_11: 7576300066902909051
+      BiteWhite_12: 7980029891083128282
+      BiteWhite_13: 1616394971883503038
+      BiteWhite_14: -3193390844128080163
+      BiteWhite_15: 485099036684835114
+      BiteWhite_16: 3981874858409992473
+      BiteWhite_17: 6846762039971492066
+      BiteWhite_18: -4438030273039017001
+      BiteWhite_19: 4134959398319912508
+      BiteWhite_2: -6615266765755352725
+      BiteWhite_20: -6372780594435527062
+      BiteWhite_21: 9062434442653143482
+      BiteWhite_22: -2757888737235876483
+      BiteWhite_23: -1309139346743116657
+      BiteWhite_24: -8650055240117166336
+      BiteWhite_25: -7891306383166996786
+      BiteWhite_26: 4549208751561131553
+      BiteWhite_27: 6558073605836002990
+      BiteWhite_28: -1655259312627240895
+      BiteWhite_29: 5693275415525151450
+      BiteWhite_3: 1714917924601718661
+      BiteWhite_30: -1738993567873508342
+      BiteWhite_31: 3366593552338077887
+      BiteWhite_32: 1344145587145513155
+      BiteWhite_33: -7728151604991076299
+      BiteWhite_34: 53675899271976889
+      BiteWhite_35: 6353589924898945448
+      BiteWhite_36: -1343689939101392551
+      BiteWhite_37: 4711942278256743661
+      BiteWhite_38: -5024952838422871758
+      BiteWhite_39: 6100300764396661425
+      BiteWhite_4: -2436583700549768372
+      BiteWhite_40: 4642384356263402011
+      BiteWhite_41: 5854070113217674352
+      BiteWhite_42: -8520577626813991495
+      BiteWhite_43: -2062057488879141614
+      BiteWhite_44: -377473641313816417
+      BiteWhite_45: -6666200416715594451
+      BiteWhite_46: 5996754803098352429
+      BiteWhite_47: -7200466505744194601
+      BiteWhite_48: 1487615223657314347
+      BiteWhite_49: -271323558660613748
+      BiteWhite_5: -4557245363574722177
+      BiteWhite_50: 6991092873583416199
+      BiteWhite_51: 2802427778498489358
+      BiteWhite_52: 4111986924783211474
+      BiteWhite_6: 3828911821579964578
+      BiteWhite_7: 1101154403824783742
+      BiteWhite_8: -3210941776493199955
+      BiteWhite_9: -3683430867043829485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
