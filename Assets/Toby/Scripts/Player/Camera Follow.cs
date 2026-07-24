@@ -9,6 +9,7 @@ public class CameraFollow : MonoBehaviour
     public Camera cam;
     public Transform target;
     public Vector3 offset;
+    public Vector3 dashOffset;
     [Range(1, 10)]
     public float smoothFactor;
 
@@ -42,6 +43,10 @@ public class CameraFollow : MonoBehaviour
         {
             Follow();
         }
+        if (target.gameObject.GetComponent<PlayerMovement>().dashing == true)
+        {
+            FollowDash();
+        }
         else
         {
             this.GetComponent<Transform>().position = Camera.main.transform.position;
@@ -54,7 +59,23 @@ public class CameraFollow : MonoBehaviour
         Vector3 smoothPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothFactor * Time.fixedDeltaTime);
         transform.position = smoothPosition;
     }
+    void FollowDash()
+    {
+        Vector3 targetPosition = target.position + dashOffset;
+        Vector3 smoothPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothFactor * Time.fixedDeltaTime);
+        transform.position = smoothPosition;
+    }
 
+    void Kill()
+    {
+    
+    }
+
+    public IEnumerator SetOrthographicSize(float newSize)
+    {
+        float oldSize = cam.orthographicSize;
+        cam.orthographicSize = newSize;
+    }
     public void MouseFollow()
     {
         Vector3 mousePos = cam.ScreenToWorldPoint(Input.mousePosition);

@@ -5,6 +5,8 @@ using UnityEngine.Events;
 
 public class Switch : MonoBehaviour
 {
+    [SerializeField] private List<EnemyController> enemies;
+
     [SerializeField] private float timerMin;
     
     [SerializeField] private float timerMax;
@@ -25,7 +27,7 @@ public class Switch : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        FindEnemies();
     }
 
     // Update is called once per frame
@@ -34,6 +36,15 @@ public class Switch : MonoBehaviour
         
     }
 
+    public void FindEnemies()
+    {
+        enemies.Clear();
+        EnemyController[] enemy = FindObjectsByType<EnemyController>();
+        foreach (var e in enemy)
+        {
+            enemies.Add(e);
+        }
+    }
     public void StartSequence()
     {
         StartCoroutine(InitateCountDown());
@@ -74,22 +85,29 @@ public class Switch : MonoBehaviour
     public IEnumerator Count(GameObject text)
     {
         //play sound
-        StartCoroutine(FlickerText(text));
-        yield return new WaitForSeconds(3f);
-        text.SetActive(true);
         if (text == down)
         {
+            StartCoroutine(FlickerText(text));
+            yield return new WaitForSeconds(3f);
+        }
+        else
+        {
+            text.SetActive(true);
+        }
+        if (text == down)
+        {
+            player.currentForm = Forms.Chicken;
             foreach (var light in lights)
             {
                 light.SetActive(true);
             }
-            player.currentForm = Forms.Chicken;
             yield return new WaitForSeconds(1f);
             //fun effect
             text.SetActive(false);
         }
         else
         {
+            FindEnemies();
             player.dashing = false;
             player.canDash = true;
             player.canAttack = true;
@@ -99,6 +117,10 @@ public class Switch : MonoBehaviour
             }
             player.currentForm = Forms.Vampire;
             yield return new WaitForSeconds(1f);
+            foreach (var e in enemies)
+            {
+                e.FindRetreat();
+            }
             //fun effect
             text.SetActive(false);
             StartSequence();

@@ -7,15 +7,19 @@ TagManager:
   - Vampire Hitbox
   - Enemy
   - Breaker
+  - Obstacle
+  - Wall
+  - Retreat
+  - Enemy Hitbox
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Obstacle
   - Water
   - UI
-  - 
-  - 
+  - Enemy
+  - Player
   - 
   - 
   - 

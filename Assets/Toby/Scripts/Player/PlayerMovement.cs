@@ -32,6 +32,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private GameObject hitBox, attackBox, chicken, vampire, dashParts;
 
     [SerializeField] private Switch switchForm;
+
+    [SerializeField] public List<GameObject> hits;
+
+    [SerializeField] public SpriteCharacterControl sprite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -43,13 +47,19 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hits.Count > 0)
+        {
+            DashToEnemy(hits);
+        }
         if (currentForm == Forms.Vampire)
         {
+            sprite = vampire.GetComponent<SpriteCharacterControl>();
             vampire.SetActive(true);
             chicken.SetActive(false);
         }
         if (currentForm == Forms.Chicken)
         {
+            sprite = chicken.GetComponent<SpriteCharacterControl>();
             vampire.SetActive(false);
             chicken.SetActive(true);
         }
@@ -110,7 +120,6 @@ public class PlayerMovement : MonoBehaviour
                 StartCoroutine(Cooldown(chickenDashCooldown, chickenDashDuration, chickenDash));
             }
         }
-        Debug.Log("Dashing");
     }
 
     public void Attack(InputAction.CallbackContext context)
@@ -125,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
     public IEnumerator StopAttack()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         attackBox.SetActive(false);
         yield return new WaitForSeconds(0.8f);
         canAttack = true;
@@ -150,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (latched == true)
         {
-            yield return new WaitForSeconds(0.6f);
+            yield return new WaitForSeconds(0.9f);
             latched = false;
             dashing = false;
             canAttack = true;
@@ -159,8 +168,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    public void DashToEnemy(GameObject target)
+    public void DashToEnemy(List<GameObject> targets)
     {
+        GameObject target = targets[0];
+        hits.Clear();
         if (canDash == false)
         {
             canAttack = false;
@@ -168,9 +179,20 @@ public class PlayerMovement : MonoBehaviour
             hitBox.SetActive(false);
             rb.linearVelocity = Vector2.zero;
             transform.position = target.transform.position;
-            Destroy(target, 0.5f);
+            StartCoroutine(Bite(target));
             //particle effects
         }
+    }
+
+    public IEnumerator Bite(GameObject target)
+    {
+        target.GetComponent<EnemyController>().chomp.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        target.GetComponent<EnemyController>().chomp.SetActive(false);
+        target.GetComponent<EnemyController>().sprite.Die();
+        target.GetComponent<EnemyController>().enabled = false;
+        target.GetComponent<BoxCollider2D>().enabled = false;
+        target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
     }
     public void LookAtMouse()
     {

@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class AttackBox : MonoBehaviour
 {
@@ -8,7 +9,10 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
-            Destroy(collision.gameObject, 0.1f);
+            collision.gameObject.GetComponent<EnemyController>().sprite.Die();
+            collision.gameObject.GetComponent<EnemyController>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
 
@@ -17,7 +21,10 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
-            Destroy(collision.gameObject, 0.1f);
+            collision.gameObject.GetComponent<EnemyController>().sprite.Die();
+            collision.gameObject.GetComponent<EnemyController>().enabled = false;
+            collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         }
     }
 }
