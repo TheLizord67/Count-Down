@@ -36,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public List<GameObject> hits;
 
     [SerializeField] public SpriteCharacterControl sprite;
+
+    [SerializeField] public RoomManager currentRoom;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -136,11 +138,24 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Room"))
+        {
+            currentRoom = collision.gameObject.GetComponent<RoomManager>();
+            currentRoom.InitalSpawn();
+        }
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Breaker") && currentForm == Forms.Chicken && dashing == true)
         {
-            switchForm.StartSequence();
+            if (collision.gameObject.GetComponent<Fusebox>().off)
+            {
+                collision.gameObject.GetComponent<Fusebox>().off = false;
+                switchForm.StartSequence();
+            }
         }
         if (dashing)
         {
@@ -233,6 +248,12 @@ public class PlayerMovement : MonoBehaviour
         target.GetComponent<EnemyController>().chomp.SetActive(true);
         mainCam.GetComponent<CameraFollow>().kill = true;
         yield return new WaitForSeconds(0.5f);
+        currentRoom.amountSpawned -= 1;
+        if (currentRoom.amountSpawned < 0)
+        {
+            currentRoom.amountSpawned = 0;
+            currentRoom.InitalSpawn();
+        }
         target.GetComponent<EnemyController>().seeker.enabled = false;
         target.GetComponent<EnemyController>().chomp.SetActive(false);
         target.GetComponent<EnemyController>().sprite.Die();

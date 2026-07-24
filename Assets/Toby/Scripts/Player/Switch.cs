@@ -98,6 +98,7 @@ public class Switch : MonoBehaviour
         {
             FindEnemies();
             player.currentForm = Forms.Chicken;
+            player.currentRoom.SwitchRooms();
             foreach (var e in enemies)
             {
                 e.ChooseTarget();

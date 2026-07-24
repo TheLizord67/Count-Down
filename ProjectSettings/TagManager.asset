@@ -11,6 +11,7 @@ TagManager:
   - Wall
   - Retreat
   - Enemy Hitbox
+  - Room
   layers:
   - Default
   - TransparentFX

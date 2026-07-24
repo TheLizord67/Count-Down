@@ -9,6 +9,12 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
+            player.currentRoom.amountSpawned -= 1;
+            if (player.currentRoom.amountSpawned < 0)
+            {
+                player.currentRoom.amountSpawned = 0;
+                player.currentRoom.InitalSpawn();
+            }
             player.mainCam.GetComponent<CameraFollow>().kill = true;
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
