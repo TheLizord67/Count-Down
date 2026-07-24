@@ -27,7 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveInput;
 
-    [SerializeField] private Camera mainCam;
+    [SerializeField] public Camera mainCam;
 
     [SerializeField] private GameObject hitBox, attackBox, chicken, vampire, dashParts;
 
@@ -47,6 +47,50 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (rb.linearVelocityX >= 0.1)
+        {
+            if (currentForm == Forms.Vampire)
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
+            }
+            else
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
+            }
+        }
+        if (rb.linearVelocityY >= 0.1)
+        {
+            if (currentForm == Forms.Vampire)
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.y = 1;
+            }
+            else
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.y = 2;
+            }
+        }
+        if (rb.linearVelocityX <= -0.1)
+        {
+            if (currentForm == Forms.Vampire)
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
+            }
+            else
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
+            }
+        }
+        if (rb.linearVelocityY <= -0.1)
+        {
+            if (currentForm == Forms.Vampire)
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.y = -1;
+            }
+            else
+            {
+                mainCam.GetComponent<CameraFollow>().dashOffset.y = -2;
+            }
+        }
         if (hits.Count > 0)
         {
             DashToEnemy(hits);
@@ -187,6 +231,7 @@ public class PlayerMovement : MonoBehaviour
     public IEnumerator Bite(GameObject target)
     {
         target.GetComponent<EnemyController>().chomp.SetActive(true);
+        mainCam.GetComponent<CameraFollow>().kill = true;
         yield return new WaitForSeconds(0.5f);
         target.GetComponent<EnemyController>().chomp.SetActive(false);
         target.GetComponent<EnemyController>().sprite.Die();

@@ -2561,6 +2561,8 @@ MonoBehaviour:
   cam: {fileID: 1521434044}
   target: {fileID: 839375316}
   offset: {x: 0, y: 0, z: -5}
+  dashOffset: {x: -2, y: 0, z: -5}
+  kill: 0
   smoothFactor: 5
   mouseInfluence: 0.4
   distanceSwitch: 15

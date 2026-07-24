@@ -11,6 +11,7 @@ public class CameraFollow : MonoBehaviour
     public Vector3 offset;
     public Vector3 dashOffset;
     public bool kill;
+    //public float oldSize, newSize, currentSize, slerp;
     [Range(1, 10)]
     public float smoothFactor;
 
@@ -52,10 +53,6 @@ public class CameraFollow : MonoBehaviour
         {
             this.GetComponent<Transform>().position = Camera.main.transform.position;
         }
-        if (kill == true)
-        {
-
-        }
     }
 
     void Follow()
@@ -69,11 +66,6 @@ public class CameraFollow : MonoBehaviour
         Vector3 targetPosition = target.position + dashOffset;
         Vector3 smoothPosition = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothFactor * Time.fixedDeltaTime);
         transform.position = smoothPosition;
-    }
-
-    void Kill()
-    {
-        kill = true;
     }
 
     public void MouseFollow()

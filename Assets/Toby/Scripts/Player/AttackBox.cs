@@ -9,6 +9,7 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
+            player.mainCam.GetComponent<CameraFollow>().kill = true;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
@@ -21,6 +22,7 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
+            player.mainCam.GetComponent<CameraFollow>().kill = true;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;
             collision.gameObject.GetComponent<BoxCollider2D>().enabled = false;
