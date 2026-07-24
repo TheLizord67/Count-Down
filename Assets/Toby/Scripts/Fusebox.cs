@@ -19,18 +19,10 @@ public class Fusebox : MonoBehaviour
         if (off)
         {
             _renderer.sprite = offSprite;
-            foreach (var connection in connections)
-            {
-                connection.SetActive(true);
-            }
         }
         else
         {
             _renderer.sprite = onSprite;
-            foreach (var connection in connections)
-            {
-                connection.SetActive(false);
-            }
         }
     }
 }
