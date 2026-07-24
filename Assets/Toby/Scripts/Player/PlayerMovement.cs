@@ -260,6 +260,9 @@ public class PlayerMovement : MonoBehaviour
             currentRoom.amountSpawned = 0;
             currentRoom.InitalSpawn();
         }
+        KillCount.kills += 1;
+        KillCount kill = FindAnyObjectByType<KillCount>();
+        kill.UpdateAllRooms();
         target.GetComponent<EnemyController>().seeker.enabled = false;
         target.GetComponent<EnemyController>().chomp.SetActive(false);
         target.GetComponent<EnemyController>().sprite.Die();

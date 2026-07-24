@@ -55,6 +55,7 @@ public class EnemyController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        speed = speed + KillCount.speedIncrease;
         //AstarPath.active.Scan();
         attackStyle = attackStylesList[Random.Range(0, attackStylesList.Length)];
         GameObject[] points = GameObject.FindGameObjectsWithTag("Retreat");

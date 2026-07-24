@@ -16,6 +16,9 @@ public class AttackBox : MonoBehaviour
                 player.currentRoom.InitalSpawn();
             }
             player.mainCam.GetComponent<CameraFollow>().kill = true;
+            KillCount.kills += 1;
+            KillCount kill = FindAnyObjectByType<KillCount>();
+            kill.UpdateAllRooms();
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;
@@ -30,6 +33,9 @@ public class AttackBox : MonoBehaviour
         {
             //particles
             player.mainCam.GetComponent<CameraFollow>().kill = true;
+            KillCount.kills += 1;
+            KillCount kill = FindAnyObjectByType<KillCount>();
+            kill.UpdateAllRooms();
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;

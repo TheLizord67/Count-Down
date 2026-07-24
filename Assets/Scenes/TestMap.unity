@@ -768,7 +768,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 20
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1001 &134367451
 PrefabInstance:
@@ -19379,7 +19379,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!4 &250071815 stripped
 Transform:
@@ -20012,7 +20012,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!4 &330670852 stripped
 Transform:
@@ -22722,6 +22722,7 @@ MonoBehaviour:
   hits: []
   sprite: {fileID: 0}
   currentRoom: {fileID: 0}
+  fuseBoxOn: {fileID: 0}
 --- !u!4 &839375316
 Transform:
   m_ObjectHideFlags: 0
@@ -23939,7 +23940,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1 &931331529
 GameObject:
@@ -25426,7 +25427,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1 &1153229250
 GameObject:
@@ -26121,7 +26122,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!4 &1247046126 stripped
 Transform:
@@ -27326,7 +27327,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1 &1474337099
 GameObject:
@@ -27641,7 +27642,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 25
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1 &1498411361
 GameObject:
@@ -30495,6 +30496,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2024280137}
   - component: {fileID: 2024280136}
+  - component: {fileID: 2024280138}
   m_Layer: 0
   m_Name: A*
   m_TagString: Untagged
@@ -30572,6 +30574,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2024280138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024280135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9da1f6b9eb2bcf488c3adb4d36dc88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KillCount
+  rooms: []
 --- !u!1001 &2033937809
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31116,7 +31131,7 @@ MonoBehaviour:
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 8
   amountSpawned: 0
 --- !u!1 &2105550263
 GameObject:
