@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Camera mainCam;
 
-    [SerializeField] private GameObject hitBox, attackBox, chicken, vampire;
+    [SerializeField] private GameObject hitBox, attackBox, chicken, vampire, dashParts;
 
     [SerializeField] private Switch switchForm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created

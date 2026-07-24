@@ -822,7 +822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &730710976
 Transform:
   m_ObjectHideFlags: 0
@@ -5862,7 +5862,6 @@ MonoBehaviour:
   attackBox: {fileID: 376092832}
   chicken: {fileID: 1879744337}
   vampire: {fileID: 2033937811}
-  dashParts: {fileID: 730710975}
   switchForm: {fileID: 839375320}
 --- !u!4 &839375316
 Transform:
