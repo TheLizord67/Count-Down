@@ -24,6 +24,8 @@ public class Switch : MonoBehaviour
     [SerializeField] private GameObject down;
 
     [SerializeField] private List<GameObject> lights;
+
+    [SerializeField] private bool sequenceStarted;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -47,10 +49,14 @@ public class Switch : MonoBehaviour
     }
     public void StartSequence()
     {
-        StartCoroutine(InitateCountDown());
+        if (!sequenceStarted)
+        {
+            StartCoroutine(InitateCountDown());
+        }
     }
     public IEnumerator InitateCountDown()
     {
+        sequenceStarted = true;
         if (player.currentForm == Forms.Chicken)
         {
             countDownVampire.Invoke();
@@ -79,6 +85,7 @@ public class Switch : MonoBehaviour
 
     public void CountDown(GameObject text)
     {
+        if (sequenceStarted)
         StartCoroutine(Count(text));
     }
 
@@ -102,6 +109,7 @@ public class Switch : MonoBehaviour
             yield return new WaitForSeconds(1f);
             //fun effect
             text.SetActive(false);
+            sequenceStarted = false;
         }
         else
         {
@@ -121,6 +129,7 @@ public class Switch : MonoBehaviour
             }
             //fun effect
             text.SetActive(false);
+            sequenceStarted = false;
             StartSequence();
         }
     }

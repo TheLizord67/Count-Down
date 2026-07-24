@@ -34,6 +34,7 @@ public class RoomManager : MonoBehaviour
         else
         {
             spawning = false;
+            amountSpawned = 0;
         }
     }
 
