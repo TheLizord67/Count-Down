@@ -299,7 +299,7 @@ Transform:
   m_GameObject: {fileID: 3828694236228368654}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.8191521, w: 0.57357645}
-  m_LocalPosition: {x: 1.021, y: -0.04, z: 0}
+  m_LocalPosition: {x: 1.117, y: 0.366, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -511,11 +511,12 @@ MonoBehaviour:
   foot2: {fileID: 575912612852358072}
   weapon: {fileID: 3828694236228368654}
   blood: {fileID: 558314902546485256}
-  hasWeapon: 0
   headBobAmount: 1
   headBobSpeed: 4
   bodyBobAmount: 1.33
   bodyBobSpeed: 8
+  weaponBobAmount: 2.2
+  weaponBobSpeed: 2.7
   footMaxDistance: 0.8
   footStepSpeed: 24
   footRaiseAmount: 12

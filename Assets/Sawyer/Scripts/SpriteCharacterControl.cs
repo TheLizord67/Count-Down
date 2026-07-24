@@ -13,6 +13,8 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private float headBobSpeed;
     [SerializeField] private float bodyBobAmount;
     [SerializeField] private float bodyBobSpeed;
+    [SerializeField] private float weaponBobAmount;
+    [SerializeField] private float weaponBobSpeed;
     [SerializeField] private float footMaxDistance;
     [SerializeField] private float footStepSpeed;
     [SerializeField] private float footRaiseAmount;
@@ -74,6 +76,12 @@ public class SpriteCharacterControl : MonoBehaviour
 
             //BodyBob
             body.transform.localPosition = bodyStartPos + new Vector3(0, (Mathf.Sin(Time.time * bodyBobSpeed) * 0.1f * bodyBobAmount), 0);
+
+            //WeaponBob
+            if (!isAttacking)
+            {
+                weapon.transform.localPosition = weaponPos + new Vector3(0, (Mathf.Sin(Time.time * weaponBobSpeed) * 0.1f * weaponBobAmount), 0);
+            }
 
             //Foot1WalkTargetCalc
             if (Vector3.Distance(lastFrameFoot1Pos, footCenterFloorPos + transform.position) > footMaxDistance)
