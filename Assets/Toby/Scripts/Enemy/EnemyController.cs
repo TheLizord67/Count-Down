@@ -132,6 +132,7 @@ public class EnemyController : MonoBehaviour
     }
     public IEnumerator Attack()
     {
+        sprite.Attack(timeToAttack);
         rb.linearVelocity = Vector2.zero;
         exclamationPoint.SetActive(true);
         yield return new WaitForSeconds(timeToAttack);
