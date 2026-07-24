@@ -37,8 +37,15 @@ public class CameraFollow : MonoBehaviour
         }
         else
         {*/
-        Follow();
         //}
+        if (target.gameObject.GetComponent<PlayerMovement>().dashing == false)
+        {
+            Follow();
+        }
+        else
+        {
+            this.GetComponent<Transform>().position = Camera.main.transform.position;
+        }
     }
 
     void Follow()

@@ -88,6 +88,10 @@ public class PlayerMovement : MonoBehaviour
         {
             switchForm.StartSequence();
         }
+        if (dashing)
+        {
+            dashing = false;
+        }
     }
     public void Dashing(InputAction.CallbackContext context)
     {
