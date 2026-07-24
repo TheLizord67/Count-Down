@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 84de588ffc216fa46ab57ccf8a77dcd6
+guid: 2854dc6026271704983f6b713f991822
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 942871405076008392
-    second: EnemyBoot_0
+      213: 7251029374735233632
+    second: Bloodspill_0
+  - first:
+      213: -904166213781982533
+    second: Bloodspill_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -72,7 +75,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: EnemyBoot_0
+      name: Bloodspill_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 25
-        width: 100
-        height: 79
+        x: 176
+        y: 422
+        width: 655
+        height: 181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8cdcd602c80c51d00800000000000000
-      internalID: 942871405076008392
+      spriteID: 06234097cc4d0a460800000000000000
+      internalID: 7251029374735233632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bloodspill_1
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 551
+        width: 75
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb27d997e91c373f0800000000000000
+      internalID: -904166213781982533
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      EnemyBoot_0: 942871405076008392
+      Bloodspill_0: 7251029374735233632
+      Bloodspill_1: -904166213781982533
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

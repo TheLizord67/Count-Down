@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: cac5d050314bfcf4cb0eb5e71b9c95fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1276684347790231108
+    second: BiteOpen_0
+  - first:
+      213: -2624159769570896355
+    second: BiteOpen_1
+  - first:
+      213: -2501071771437668827
+    second: BiteOpen_2
+  - first:
+      213: -4693766298025493037
+    second: BiteOpen_3
+  - first:
+      213: -8577001451390281364
+    second: BiteOpen_4
+  - first:
+      213: -2418481339060776100
+    second: BiteOpen_5
+  - first:
+      213: 2417408188705128558
+    second: BiteOpen_6
+  - first:
+      213: 983567918529319498
+    second: BiteOpen_7
+  - first:
+      213: -1405977500060067776
+    second: BiteOpen_8
+  - first:
+      213: -7537134759649530264
+    second: BiteOpen_9
+  - first:
+      213: -1573773272590091122
+    second: BiteOpen_10
+  - first:
+      213: 4515533044959369045
+    second: BiteOpen_11
+  - first:
+      213: -1064169334937623260
+    second: BiteOpen_12
+  - first:
+      213: 7469890533555565036
+    second: BiteOpen_13
+  - first:
+      213: -5421299986452635390
+    second: BiteOpen_14
+  - first:
+      213: -7971120899857833220
+    second: BiteOpen_15
+  - first:
+      213: -4736496503553575746
+    second: BiteOpen_16
+  - first:
+      213: 1645962035922855331
+    second: BiteOpen_17
+  - first:
+      213: 9091688232459581704
+    second: BiteOpen_18
+  - first:
+      213: -3295345680539957029
+    second: BiteOpen_19
+  - first:
+      213: -4430327071786627453
+    second: BiteOpen_20
+  - first:
+      213: 2932290375518591818
+    second: BiteOpen_21
+  - first:
+      213: -1079322392339295371
+    second: BiteOpen_22
+  - first:
+      213: -3903735722381957019
+    second: BiteOpen_23
+  - first:
+      213: 4739980903826347814
+    second: BiteOpen_24
+  - first:
+      213: -846553476690289363
+    second: BiteOpen_25
+  - first:
+      213: 8000053665134822535
+    second: BiteOpen_26
+  - first:
+      213: 5440692727799821135
+    second: BiteOpen_27
+  - first:
+      213: -871058224790175617
+    second: BiteOpen_28
+  - first:
+      213: 1558521318493965502
+    second: BiteOpen_29
+  - first:
+      213: -4532885467549679710
+    second: BiteOpen_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 150
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BiteOpen_0
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 790
+        width: 35
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb979af895e484ee0800000000000000
+      internalID: -1276684347790231108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_1
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 824
+        width: 27
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d161bdcc79c159bd0800000000000000
+      internalID: -2624159769570896355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 723
+        width: 82
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52663b1a9786a4dd0800000000000000
+      internalID: -2501071771437668827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_3
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 823
+        width: 27
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dd7d7bab646cdeb0800000000000000
+      internalID: -4693766298025493037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_4
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 832
+        width: 23
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c695fd37f9e58f880800000000000000
+      internalID: -8577001451390281364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_5
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 851
+        width: 17
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c531f592904df6ed0800000000000000
+      internalID: -2418481339060776100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_6
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 851
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e60c3ec80fb5c8120800000000000000
+      internalID: 2417408188705128558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 854
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42196c8fc556ad00800000000000000
+      internalID: 983567918529319498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_8
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 850
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0485ab2b9e6fc7ce0800000000000000
+      internalID: -1405977500060067776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_9
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 829
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86e27da9ed7b66790800000000000000
+      internalID: -7537134759649530264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_10
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 812
+        width: 30
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8c734afb85d82ae0800000000000000
+      internalID: -1573773272590091122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_11
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 726
+        width: 69
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 557575c41656aae30800000000000000
+      internalID: 4515533044959369045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_12
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 789
+        width: 39
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425ed2ac0af4b31f0800000000000000
+      internalID: -1064169334937623260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_13
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 699
+        width: 52
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1f1a3fcd16aa760800000000000000
+      internalID: 7469890533555565036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_14
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 754
+        width: 42
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20129a6b26ca3c4b0800000000000000
+      internalID: -5421299986452635390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_15
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 761
+        width: 44
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf2284e36c3e06190800000000000000
+      internalID: -7971120899857833220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_16
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 718
+        width: 39
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb43fc96685944eb0800000000000000
+      internalID: -4736496503553575746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_17
+      rect:
+        serializedVersion: 2
+        x: 766
+        y: 663
+        width: 44
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a5e5f040c1a7d610800000000000000
+      internalID: 1645962035922855331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_18
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 326
+        width: 51
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8093a50174a2c2e70800000000000000
+      internalID: 9091688232459581704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_19
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 269
+        width: 45
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd84c4320949442d0800000000000000
+      internalID: -3295345680539957029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_20
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 112
+        width: 65
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38e8c5740015482c0800000000000000
+      internalID: -4430327071786627453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_21
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 82
+        width: 85
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b15138f8691b820800000000000000
+      internalID: 2932290375518591818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 263
+        width: 44
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573dd7ea00a7501f0800000000000000
+      internalID: -1079322392339295371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_23
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 315
+        width: 48
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568ab6a1b0523d9c0800000000000000
+      internalID: -3903735722381957019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_24
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 216
+        width: 52
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62754beb48bc7c140800000000000000
+      internalID: 4739980903826347814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_25
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 151
+        width: 43
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2dd08229107044f0800000000000000
+      internalID: -846553476690289363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_26
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 162
+        width: 33
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7844c6e1c66e50f60800000000000000
+      internalID: 8000053665134822535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_27
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 184
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f433f8cb539318b40800000000000000
+      internalID: 5440692727799821135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_28
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 218
+        width: 35
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7003bcd82169e3f0800000000000000
+      internalID: -871058224790175617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_29
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 169
+        width: 28
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebcc4bbb1eaf0a510800000000000000
+      internalID: 1558521318493965502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BiteOpen_30
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 166
+        width: 27
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2afbb2bfea4f711c0800000000000000
+      internalID: -4532885467549679710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BiteOpen_0: -1276684347790231108
+      BiteOpen_1: -2624159769570896355
+      BiteOpen_10: -1573773272590091122
+      BiteOpen_11: 4515533044959369045
+      BiteOpen_12: -1064169334937623260
+      BiteOpen_13: 7469890533555565036
+      BiteOpen_14: -5421299986452635390
+      BiteOpen_15: -7971120899857833220
+      BiteOpen_16: -4736496503553575746
+      BiteOpen_17: 1645962035922855331
+      BiteOpen_18: 9091688232459581704
+      BiteOpen_19: -3295345680539957029
+      BiteOpen_2: -2501071771437668827
+      BiteOpen_20: -4430327071786627453
+      BiteOpen_21: 2932290375518591818
+      BiteOpen_22: -1079322392339295371
+      BiteOpen_23: -3903735722381957019
+      BiteOpen_24: 4739980903826347814
+      BiteOpen_25: -846553476690289363
+      BiteOpen_26: 8000053665134822535
+      BiteOpen_27: 5440692727799821135
+      BiteOpen_28: -871058224790175617
+      BiteOpen_29: 1558521318493965502
+      BiteOpen_3: -4693766298025493037
+      BiteOpen_30: -4532885467549679710
+      BiteOpen_4: -8577001451390281364
+      BiteOpen_5: -2418481339060776100
+      BiteOpen_6: 2417408188705128558
+      BiteOpen_7: 983567918529319498
+      BiteOpen_8: -1405977500060067776
+      BiteOpen_9: -7537134759649530264
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
