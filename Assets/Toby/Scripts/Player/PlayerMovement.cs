@@ -10,9 +10,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float vampSpeed, vampDash, vampDashDuration, vampDashCooldown;
 
-    [SerializeField] private float chickenSpeed, chickenDash, chickenDashDuration, chickenDashCooldown;
+    [SerializeField] private float chickenSpeed, chickenDash, chickenDashDuration, chickenDashCooldown, atkCool;
 
-    [SerializeField] private float speedCap, rotateSpeed;
+    [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime;
 
     [SerializeField] public bool dashing, canDash, canAttack, latched;
 
@@ -201,7 +201,7 @@ public class PlayerMovement : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         attackBox.SetActive(false);
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(atkCool);
         canAttack = true;
     }
     public IEnumerator Cooldown(float cooldownTime, float duration, float speed)
@@ -224,7 +224,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (latched == true)
         {
-            yield return new WaitForSeconds(0.9f);
+            yield return new WaitForSeconds(latchedTime);
             latched = false;
             dashing = false;
             canAttack = true;
@@ -253,7 +253,7 @@ public class PlayerMovement : MonoBehaviour
     {
         target.GetComponent<EnemyController>().chomp.SetActive(true);
         mainCam.GetComponent<CameraFollow>().kill = true;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(animWaitTime);
         currentRoom.amountSpawned -= 1;
         if (currentRoom.amountSpawned < 0)
         {

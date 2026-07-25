@@ -22250,8 +22250,11 @@ MonoBehaviour:
   chickenDash: 25
   chickenDashDuration: 0.5
   chickenDashCooldown: 0.5
+  atkCool: 0.5
   speedCap: 10
   rotateSpeed: 10
+  animWaitTime: 0.5
+  latchedTime: 0.2
   dashing: 0
   canDash: 1
   canAttack: 1
@@ -22277,7 +22280,7 @@ Transform:
   m_GameObject: {fileID: 839375311}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -71.79, y: 70.57, z: 0}
+  m_LocalPosition: {x: 3.6, y: -15.4, z: 0}
   m_LocalScale: {x: 1.0443, y: 1.1626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -29541,7 +29544,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5799073163254070570, guid: 25b6439e9f3682940b120abbad11dab7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
