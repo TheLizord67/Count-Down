@@ -52,13 +52,17 @@ public class RoomManager : MonoBehaviour
                     Transform spawn = enemySpawns[0];
                     int loops = 0;
 
-                    while ((spawn.position - player.transform.position).magnitude < 40 && loops < 10)
+                    while ((spawn.position - player.transform.position).magnitude < 20 && loops < 10)
                     {
                         enemySpawns = (List<Transform>)enemySpawns.Shuffle();
                         spawn = enemySpawns[0];
                         loops++;
+
+                        Debug.Log(loops);
+                        Debug.Log(enemySpawns[0]);
                     }
-                    Instantiate(enemy, spawn.position, Quaternion.identity);
+                    if (loops < 10)
+                        Instantiate(enemy, spawn.position, Quaternion.identity);
                 }
             }
         }
@@ -76,13 +80,17 @@ public class RoomManager : MonoBehaviour
                 Transform spawn = enemySpawns[0];
                 int loops = 0;
 
-                while ((spawn.position - player.transform.position).magnitude < 40 && loops < 10)
+                while ((spawn.position - player.transform.position).magnitude < 20 && loops < 10)
                 {
                     enemySpawns = (List<Transform>)enemySpawns.Shuffle();
                     spawn = enemySpawns[0];
                     loops++;
+                    Debug.Log(loops);
+                    Debug.Log(enemySpawns[0]);
                 }
-                Instantiate(enemy, spawn.position, Quaternion.identity);
+
+                if (loops < 10)
+                    Instantiate(enemy, spawn.position, Quaternion.identity);
             }
         }
     }

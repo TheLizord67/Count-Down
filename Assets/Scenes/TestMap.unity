@@ -2436,10 +2436,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &133024273
 GameObject:
@@ -3089,14 +3089,15 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1799508446}
+  - {fileID: 1292147985}
   - {fileID: 1978541214}
   - {fileID: 152487981}
   - {fileID: 1309201030}
   - {fileID: 1174104373}
   - {fileID: 558610939}
   - {fileID: 92822051}
-  - {fileID: 954627030}
   - {fileID: 1503115368}
+  - {fileID: 954627030}
   - {fileID: 126119022}
   - {fileID: 1664867591}
   - {fileID: 1461113041}
@@ -16935,7 +16936,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 12
+      m_TileSpriteIndex: 6
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -16945,7 +16946,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17186,26 +17187,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 1
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 2147483650
-  - first: {x: -16, y: 13, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 5
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 2147483650
-  - first: {x: -15, y: 13, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 5
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17505,7 +17486,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17515,7 +17496,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 2
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -22494,7 +22475,7 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - serializedVersion: 2
-    m_RefCount: 1927
+    m_RefCount: 1925
     m_Data: {fileID: 11400000, guid: 302f0544ed0cb734ba92e250ad425a0a, type: 2}
   m_TileSpriteArray:
   - serializedVersion: 2
@@ -22504,19 +22485,19 @@ Tilemap:
     m_RefCount: 168
     m_Data: {fileID: 896657703689755536, guid: 5d5e6a9bcce64014ea6b27b485ef8f74, type: 3}
   - serializedVersion: 2
-    m_RefCount: 166
+    m_RefCount: 168
     m_Data: {fileID: -6987559377540968250, guid: e4ae1e8678e4d604180194fef0970d18, type: 3}
   - serializedVersion: 2
-    m_RefCount: 161
+    m_RefCount: 162
     m_Data: {fileID: -3766338640075495818, guid: f09f8bf51bdadd949b94ad0b183210b5, type: 3}
   - serializedVersion: 2
     m_RefCount: 175
     m_Data: {fileID: 7544066866654231106, guid: 434e681be2e22114eba6e5f84f09377a, type: 3}
   - serializedVersion: 2
-    m_RefCount: 227
+    m_RefCount: 222
     m_Data: {fileID: -6743621057647729290, guid: e3282638003fb8841b042f5418dd2d09, type: 3}
   - serializedVersion: 2
-    m_RefCount: 207
+    m_RefCount: 208
     m_Data: {fileID: 1033244009178823675, guid: 268588bb397cc3f4ba86dac57913d8e0, type: 3}
   - serializedVersion: 2
     m_RefCount: 34
@@ -22534,7 +22515,7 @@ Tilemap:
     m_RefCount: 98
     m_Data: {fileID: -7169544339215867439, guid: f74a84f1067302d40b0b456dafc1b0f6, type: 3}
   - serializedVersion: 2
-    m_RefCount: 294
+    m_RefCount: 293
     m_Data: {fileID: 3482583995847131289, guid: 005b2813da4f5494e801a3df59b74535, type: 3}
   - serializedVersion: 2
     m_RefCount: 62
@@ -22544,7 +22525,7 @@ Tilemap:
     m_Data: {fileID: -6613226119669163666, guid: c3073cef30fcf8a47bee6e2a4ade4ac4, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 1261
+    m_RefCount: 1260
     m_Data:
       e00: 1
       e01: 0
@@ -22563,7 +22544,7 @@ Tilemap:
       e32: 0
       e33: 1
   - serializedVersion: 2
-    m_RefCount: 666
+    m_RefCount: 665
     m_Data:
       e00: -1
       e01: 0
@@ -22583,7 +22564,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - serializedVersion: 2
-    m_RefCount: 1927
+    m_RefCount: 1925
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -23818,10 +23799,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &232611727
 GameObject:
@@ -25543,10 +25524,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!4 &330670852 stripped
 Transform:
@@ -37233,6 +37214,7 @@ MonoBehaviour:
   canAttack: 1
   latched: 0
   invincible: 0
+  dead: 0
   hp: 3
   currentForm: 0
   mainCam: {fileID: 1521434044}
@@ -37256,7 +37238,7 @@ Transform:
   m_GameObject: {fileID: 839375311}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.6, y: -15.4, z: 0}
+  m_LocalPosition: {x: 87.3, y: -31.4, z: 0}
   m_LocalScale: {x: 1.0443, y: 1.1626, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39555,10 +39537,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &937606420
 GameObject:
@@ -45128,10 +45110,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &1150825318
 GameObject:
@@ -46704,10 +46686,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &1235668338
 GameObject:
@@ -47447,6 +47429,68 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1001 &1292147984
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 163564988}
+    m_Modifications:
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -46.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 40.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6852034931088776116, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+      propertyPath: m_Name
+      value: Door (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+--- !u!4 &1292147985 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5131618212272355045, guid: e8914e4b7c7796644930fd70bbfe10a2, type: 3}
+  m_PrefabInstance: {fileID: 1292147984}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1302872920
 GameObject:
   m_ObjectHideFlags: 0
@@ -51224,10 +51268,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &1474337099
 GameObject:
@@ -51903,10 +51947,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &1498411361
 GameObject:
@@ -66377,10 +66421,10 @@ MonoBehaviour:
   spawning: 0
   enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 8
-  maxEnemiesToSpawn: 400
+  maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 10
+  spawnLimit: 1000
   amountSpawned: 0
 --- !u!1 &2086443331
 GameObject:
