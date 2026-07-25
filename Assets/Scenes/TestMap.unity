@@ -37258,7 +37258,7 @@ Transform:
   - {fileID: 1233001401}
   - {fileID: 1498411362}
   - {fileID: 1015982569}
-  m_Father: {fileID: 1058082555}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &839375318
 Rigidbody2D:
@@ -42093,8 +42093,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 839375316}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1058082556
@@ -67796,6 +67795,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2024280137}
   - {fileID: 1521434045}
+  - {fileID: 839375316}
   - {fileID: 1058082555}
   - {fileID: 580772621}
   - {fileID: 668201761}
