@@ -9,6 +9,7 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private GameObject foot2;
     [SerializeField] private GameObject weapon;
     [SerializeField] private GameObject blood;
+    [SerializeField] private GameObject skull;
     [SerializeField] private float headBobAmount;
     [SerializeField] private float headBobSpeed;
     [SerializeField] private float bodyBobAmount;
@@ -163,6 +164,7 @@ public class SpriteCharacterControl : MonoBehaviour
         isDead = true;
         body.transform.localPosition = bodyStartPos - new Vector3(0, 0.5f, 0);
         blood.gameObject.SetActive(true);
+        skull.gameObject.SetActive(true);
         if (!isChicken)
         {
             body.transform.localRotation = Quaternion.Euler(0, 0, -90);
