@@ -12,6 +12,7 @@ TagManager:
   - Retreat
   - Enemy Hitbox
   - Room
+  - Warning
   layers:
   - Default
   - TransparentFX

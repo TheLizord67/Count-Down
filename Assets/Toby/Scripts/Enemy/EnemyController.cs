@@ -50,8 +50,9 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] private AttackStyles attackStyle;
 
-    [SerializeField] public GameObject chomp;
+    [SerializeField] public GameObject chomp, torch, warning;
 
+    [SerializeField] public bool ranged;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -151,18 +152,44 @@ public class EnemyController : MonoBehaviour
     }
     public IEnumerator Attack()
     {
-        sprite.Attack(timeToAttack);
-        rb.linearVelocity = Vector2.zero;
-        exclamationPoint.SetActive(true);
-        yield return new WaitForSeconds(timeToAttack);
-        exclamationPoint.SetActive(false);
-        hitBox.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        hitBox.SetActive(false);
-        if (player.currentForm == Forms.Chicken)
+        if (!ranged)
         {
-            state = States.Following;
+            sprite.Attack(timeToAttack);
+            rb.linearVelocity = Vector2.zero;
+            exclamationPoint.SetActive(true);
+            yield return new WaitForSeconds(timeToAttack);
+            exclamationPoint.SetActive(false);
+            hitBox.SetActive(true);
+            yield return new WaitForSeconds(0.5f);
+            hitBox.SetActive(false);
+            if (player.currentForm == Forms.Chicken)
+            {
+                state = States.Following;
+            }
         }
+        else
+        {
+            sprite.Attack(timeToAttack);
+            rb.linearVelocity = Vector2.zero;
+            exclamationPoint.SetActive(true);
+            yield return new WaitForSeconds(timeToAttack);
+            exclamationPoint.SetActive(false);
+            Throw();
+            yield return new WaitForSeconds(3f);
+            if (player.currentForm == Forms.Chicken)
+            {
+                state = States.Following;
+            }
+        }
+    }
+
+    public void Throw()
+    {
+        Transform target = player.transform;
+        GameObject warning_ = Instantiate(warning, target.position, Quaternion.identity);
+        GameObject torchThrown = Instantiate(torch, this.transform.position, Quaternion.identity);
+        torchThrown.GetComponent<Torch>().Thrown(warning_.transform);
+        torchThrown.GetComponent<Torch>().isThrown = true;
     }
     public void Running()
     {

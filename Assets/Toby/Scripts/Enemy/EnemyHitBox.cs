@@ -18,6 +18,7 @@ public class EnemyHitBox : MonoBehaviour
                 {
                     //particles
                     collision.gameObject.GetComponent<PlayerMovement>().sprite.Die();
+                    collision.gameObject.GetComponent<PlayerMovement>().dead = true;
                     collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
                     collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                     collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
@@ -43,6 +44,7 @@ public class EnemyHitBox : MonoBehaviour
                 { 
                     //particles
                     collision.gameObject.GetComponent<PlayerMovement>().sprite.Die();
+                    collision.gameObject.GetComponent<PlayerMovement>().dead = true;
                     collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
                     collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                     collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;

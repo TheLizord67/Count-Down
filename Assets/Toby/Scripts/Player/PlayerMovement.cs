@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime, IFrameTime;
 
-    [SerializeField] public bool dashing, canDash, canAttack, latched, invincible;
+    [SerializeField] public bool dashing, canDash, canAttack, latched, invincible, dead;
 
     [SerializeField] public int hp;
 
@@ -55,96 +55,99 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (currentRoom.fuseBox.off == true)
+        if (!dead)
         {
-            fuseBoxOn = currentRoom.fuseBox.transform;
-        }
-        if (rb.linearVelocityX >= 0.1)
-        {
+            if (currentRoom.fuseBox.off == true)
+            {
+                fuseBoxOn = currentRoom.fuseBox.transform;
+            }
+            if (rb.linearVelocityX >= 0.1)
+            {
+                if (currentForm == Forms.Vampire)
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
+                }
+                else
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
+                }
+            }
+            if (rb.linearVelocityY >= 0.1)
+            {
+                if (currentForm == Forms.Vampire)
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.y = 1;
+                }
+                else
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.y = 2;
+                }
+            }
+            if (rb.linearVelocityX <= -0.1)
+            {
+                if (currentForm == Forms.Vampire)
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
+                }
+                else
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
+                }
+            }
+            if (rb.linearVelocityY <= -0.1)
+            {
+                if (currentForm == Forms.Vampire)
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.y = -1;
+                }
+                else
+                {
+                    mainCam.GetComponent<CameraFollow>().dashOffset.y = -2;
+                }
+            }
+            if (hits.Count > 0)
+            {
+                DashToEnemy(hits);
+            }
             if (currentForm == Forms.Vampire)
             {
-                mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
+                sprite = vampire.GetComponent<SpriteCharacterControl>();
+                vampire.SetActive(true);
+                chicken.SetActive(false);
             }
-            else
+            if (currentForm == Forms.Chicken)
             {
-                mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
+                sprite = chicken.GetComponent<SpriteCharacterControl>();
+                vampire.SetActive(false);
+                chicken.SetActive(true);
             }
-        }
-        if (rb.linearVelocityY >= 0.1)
-        {
-            if (currentForm == Forms.Vampire)
+            if (dashing == true)
             {
-                mainCam.GetComponent<CameraFollow>().dashOffset.y = 1;
+                canAttack = false;
             }
-            else
+            _movement.Set(InputManager.movement.x, InputManager.movement.y);
+            FollowMovement();
+            if (currentForm == Forms.Vampire && dashing == false)
             {
-                mainCam.GetComponent<CameraFollow>().dashOffset.y = 2;
+                if (rb.linearVelocity.magnitude > speedCap)
+                {
+                    rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
+                }
+                else
+                {
+                    rb.linearVelocity = _movement * vampSpeed;
+                }
             }
-        }
-        if (rb.linearVelocityX <= -0.1)
-        {
-            if (currentForm == Forms.Vampire)
+            if (currentForm == Forms.Chicken && dashing == false)
             {
-                mainCam.GetComponent<CameraFollow>().dashOffset.x = 1;
-            }
-            else
-            {
-                mainCam.GetComponent<CameraFollow>().dashOffset.x = 2;
-            }
-        }
-        if (rb.linearVelocityY <= -0.1)
-        {
-            if (currentForm == Forms.Vampire)
-            {
-                mainCam.GetComponent<CameraFollow>().dashOffset.y = -1;
-            }
-            else
-            {
-                mainCam.GetComponent<CameraFollow>().dashOffset.y = -2;
-            }
-        }
-        if (hits.Count > 0)
-        {
-            DashToEnemy(hits);
-        }
-        if (currentForm == Forms.Vampire)
-        {
-            sprite = vampire.GetComponent<SpriteCharacterControl>();
-            vampire.SetActive(true);
-            chicken.SetActive(false);
-        }
-        if (currentForm == Forms.Chicken)
-        {
-            sprite = chicken.GetComponent<SpriteCharacterControl>();
-            vampire.SetActive(false);
-            chicken.SetActive(true);
-        }
-        if (dashing == true)
-        {
-            canAttack = false;
-        }
-        _movement.Set(InputManager.movement.x, InputManager.movement.y);
-        FollowMovement();
-        if (currentForm == Forms.Vampire && dashing == false)
-        {
-            if (rb.linearVelocity.magnitude > speedCap)
-            {
-                rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
-            }
-            else
-            {
-                rb.linearVelocity = _movement * vampSpeed;
-            }
-        }
-        if (currentForm == Forms.Chicken && dashing == false)
-        {
-            if (rb.linearVelocity.magnitude > speedCap)
-            {
-                rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
-            }
-            else
-            {
-                rb.linearVelocity = _movement * chickenSpeed;
+                if (rb.linearVelocity.magnitude > speedCap)
+                {
+                    rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
+                }
+                else
+                {
+                    rb.linearVelocity = _movement * chickenSpeed;
+                }
             }
         }
     }
@@ -175,7 +178,7 @@ public class PlayerMovement : MonoBehaviour
     }
     public void Dashing(InputAction.CallbackContext context)
     {
-        if (context.started && dashing == false && canDash == true)
+        if (context.started && dashing == false && canDash == true && dead == false)
         {
             canAttack = false;
             if (currentForm == Forms.Vampire)
