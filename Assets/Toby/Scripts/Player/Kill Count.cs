@@ -21,6 +21,7 @@ public class KillCount : MonoBehaviour
 
     void Start()
     {
+        kills = 0;
         RoomManager[] r = FindObjectsByType<RoomManager>();
         foreach (var r2 in r)
         {
@@ -29,7 +30,6 @@ public class KillCount : MonoBehaviour
     }
     public void UpdateAllRooms()
     {
-
         killEvent.Invoke();
 
         foreach (var room in rooms)
@@ -37,7 +37,5 @@ public class KillCount : MonoBehaviour
             room.AdjustSettings();
         }
         //speed increase from this cause it's convenient
-        
-
     }
 }

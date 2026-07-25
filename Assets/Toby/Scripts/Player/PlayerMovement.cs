@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.UIElements;
 
 public enum Forms { Vampire, Chicken };
@@ -42,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private Switch switchForm;
 
-    [SerializeField] public List<GameObject> hits;
+    [SerializeField] public List<GameObject> hits, hearts;
 
     [SerializeField] public SpriteCharacterControl sprite;
 
@@ -51,9 +53,28 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public Transform fuseBoxOn;
 
     [SerializeField] private BackgroungLightFlicker background;
+
+    [SerializeField] public GameObject gameOver;
+
+    [SerializeField] public Volume globalVolume;
+
+    private Vignette vignetteEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    public void Hurt()
+    {
+        vignetteEffect.intensity.value = 0.7f;
+        hp -= 1;
+        Destroy(hearts[0].gameObject);
+        hearts.Remove(hearts[0]);
+        StartCoroutine(IFrames());
+    }
     void Awake()
     {
+        if (globalVolume != null && globalVolume.profile.TryGet(out vignetteEffect))
+        {
+            vignetteEffect.intensity.overrideState = true;
+        }
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
         switchForm.StartSequence();
@@ -204,7 +225,6 @@ public class PlayerMovement : MonoBehaviour
             }
         }
     }
-
     public void Attack(InputAction.CallbackContext context)
     {
         if (canAttack == true && currentForm == Forms.Vampire)
@@ -214,7 +234,6 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(StopAttack());
         }
     }
-
     public IEnumerator StopAttack()
     {
         yield return new WaitForSeconds(0.1f);
@@ -250,7 +269,6 @@ public class PlayerMovement : MonoBehaviour
             canDash = true;
         }
     }
-
     public void DashToEnemy(List<GameObject> targets)
     {
         GameObject target = targets[0];
@@ -266,7 +284,6 @@ public class PlayerMovement : MonoBehaviour
             //particle effects
         }
     }
-
     public IEnumerator Bite(GameObject target)
     {
         target.GetComponent<EnemyController>().chomp.SetActive(true);
@@ -292,6 +309,7 @@ public class PlayerMovement : MonoBehaviour
     {
         invincible = true;
         yield return new WaitForSeconds(IFrameTime);
+        vignetteEffect.intensity.value = 0f;
         invincible = false;
     }
     public void LookAtMouse()

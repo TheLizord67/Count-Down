@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.Rendering.Universal;
 
 public class Switch : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class Switch : MonoBehaviour
     [SerializeField] private GameObject down;
 
     [SerializeField] private List<GameObject> lights;
+
+    [SerializeField] private Light2D globalLight;
 
     [SerializeField] private bool sequenceStarted;
 
@@ -74,31 +77,32 @@ public class Switch : MonoBehaviour
             lightFlicker.Invoke();
             yield return new WaitForSeconds(time);
             countDownChicken.Invoke();
+            globalLight.intensity = 1f;
             background.Yellow(true);
         }
     }
 
     public void LightsFlicker()
     {
-        foreach(var light in lights)
-        {
-            StartCoroutine(Flicker(light));
-        }
+        StartCoroutine(Flicker());
     }
 
     public void CountDown(GameObject text)
     {
         if (sequenceStarted)
-        StartCoroutine(Count(text));
+        {
+            text.SetActive(false);
+            StartCoroutine(Count(text));
+        }
     }
 
     public IEnumerator Count(GameObject text)
     {
         //play sound
-        text.SetActive(true);
         if (text == down)
         {
             FindEnemies();
+            text.SetActive(true);
             player.currentForm = Forms.Chicken;
             player.currentRoom.SwitchRooms();
             foreach (var e in enemies)
@@ -124,8 +128,12 @@ public class Switch : MonoBehaviour
             {
                 light.SetActive(false);
             }
+            text.SetActive(true);
+            globalLight.intensity = 0.3f;
             player.currentForm = Forms.Vampire;
+            StartCoroutine(TurnOff(text));
             yield return new WaitForSeconds(1f);
+            FindEnemies();
             foreach (var e in enemies)
             {
                 e.FindRetreat();
@@ -136,27 +144,33 @@ public class Switch : MonoBehaviour
             StartSequence();
         }
     }
-    public IEnumerator Flicker(GameObject light)
+
+    public IEnumerator TurnOff(GameObject text)
     {
-        light.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        text.SetActive(false);
+    }
+    public IEnumerator Flicker()
+    {
+        globalLight.intensity = 1f;
         background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(false);
+        globalLight.intensity = 0.3f;
         background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(true);
+        globalLight.intensity = 1f;
         background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(false);
+        globalLight.intensity = 0.3f;
         background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(false);
+        globalLight.intensity = 1f;
         background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(true);
+        globalLight.intensity = 0.3f;
         background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
-        light.SetActive(false);
+        globalLight.intensity = 1f;
         background.Yellow(true);
     }
     public IEnumerator FlickerText(GameObject light)
