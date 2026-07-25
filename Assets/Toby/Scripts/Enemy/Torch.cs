@@ -32,7 +32,7 @@ public class Torch : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Warning"))
+        if (collision.gameObject.CompareTag("Warning") && collision.gameObject.transform == currentTarget)
         {
             Destroy(collision.gameObject);
             isThrown = false;

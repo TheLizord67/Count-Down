@@ -7,7 +7,7 @@ public class SpriteCharacterControl : MonoBehaviour
     [SerializeField] private GameObject body;
     [SerializeField] private GameObject foot1;
     [SerializeField] private GameObject foot2;
-    [SerializeField] private GameObject weapon;
+    [SerializeField] public GameObject weapon;
     [SerializeField] private GameObject blood;
     [SerializeField] private GameObject skull;
     [SerializeField] private float headBobAmount;

@@ -25,7 +25,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] public PlayerMovement player;
 
-    [SerializeField] public float speed, slerp, distanceToAttack, timeToAttack;
+    [SerializeField] public float speed, slerp, distanceToAttack, timeToAttack, run, distanceToDespawn;
 
     [SerializeField] public float nextWaypointDistance = 3f;
 
@@ -95,6 +95,11 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float playerDistance = Vector2.Distance(rb.position, player.gameObject.transform.position);
+        if (playerDistance >= distanceToDespawn)
+        {
+            Destroy(gameObject, 1f);
+        }
         if (player.currentForm == Forms.Chicken && state != States.Attacking)
         {
             state = States.Following;
@@ -173,9 +178,11 @@ public class EnemyController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             exclamationPoint.SetActive(true);
             yield return new WaitForSeconds(timeToAttack);
+            sprite.weapon.SetActive(false);
             exclamationPoint.SetActive(false);
             Throw();
             yield return new WaitForSeconds(3f);
+            sprite.weapon.SetActive(true);
             if (player.currentForm == Forms.Chicken)
             {
                 state = States.Following;
@@ -228,7 +235,7 @@ public class EnemyController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
         }
         
-        if (playerDistance <= 7f)
+        if (playerDistance <= run)
         {
             FindSecondRetreat();
         }

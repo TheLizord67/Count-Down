@@ -953,6 +953,8 @@ MonoBehaviour:
   slerp: 1
   distanceToAttack: 3
   timeToAttack: 0.6
+  run: 10
+  distanceToDespawn: 80
   nextWaypointDistance: 3
   exclamationPoint: {fileID: 7725654379439659095}
   hitBox: {fileID: 4658418790302604719}
@@ -962,6 +964,9 @@ MonoBehaviour:
   state: 0
   attackStyle: 0
   chomp: {fileID: 4653246744186684732}
+  torch: {fileID: 0}
+  warning: {fileID: 0}
+  ranged: 0
 --- !u!70 &2026844005910717463
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

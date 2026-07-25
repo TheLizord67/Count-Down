@@ -13,7 +13,7 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private bool spawning;
 
-    [SerializeField] private GameObject enemy;
+    [SerializeField] private List<GameObject> enemy;
 
     [SerializeField] private float spawnSpeed;
 
@@ -62,7 +62,8 @@ public class RoomManager : MonoBehaviour
                         Debug.Log(enemySpawns[0]);
                     }
                     if (loops < 10)
-                        Instantiate(enemy, spawn.position, Quaternion.identity);
+                        enemy = (List<GameObject>)enemy.Shuffle();
+                        Instantiate(enemy[0], spawn.position, Quaternion.identity);
                 }
             }
         }
@@ -90,7 +91,8 @@ public class RoomManager : MonoBehaviour
                 }
 
                 if (loops < 10)
-                    Instantiate(enemy, spawn.position, Quaternion.identity);
+                    enemy = (List<GameObject>)enemy.Shuffle();
+                    Instantiate(enemy[0], spawn.position, Quaternion.identity);
             }
         }
     }

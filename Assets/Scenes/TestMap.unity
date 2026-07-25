@@ -2425,6 +2425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 1233325788}
+  - {fileID: 1490675241}
   enemySpawns:
   - {fileID: 1563900226}
   - {fileID: 671327019}
@@ -2434,12 +2435,14 @@ MonoBehaviour:
   fuseBox: {fileID: 560116906}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 20
   amountSpawned: 0
 --- !u!1 &133024273
 GameObject:
@@ -6736,7 +6739,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 5
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 1
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -7097,16 +7100,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 4
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 2147483650
-  - first: {x: -6, y: -12, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 9
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -22475,7 +22468,7 @@ Tilemap:
   m_AnimatedTiles: {}
   m_TileAssetArray:
   - serializedVersion: 2
-    m_RefCount: 1925
+    m_RefCount: 1924
     m_Data: {fileID: 11400000, guid: 302f0544ed0cb734ba92e250ad425a0a, type: 2}
   m_TileSpriteArray:
   - serializedVersion: 2
@@ -22488,13 +22481,13 @@ Tilemap:
     m_RefCount: 168
     m_Data: {fileID: -6987559377540968250, guid: e4ae1e8678e4d604180194fef0970d18, type: 3}
   - serializedVersion: 2
-    m_RefCount: 162
+    m_RefCount: 163
     m_Data: {fileID: -3766338640075495818, guid: f09f8bf51bdadd949b94ad0b183210b5, type: 3}
   - serializedVersion: 2
     m_RefCount: 175
     m_Data: {fileID: 7544066866654231106, guid: 434e681be2e22114eba6e5f84f09377a, type: 3}
   - serializedVersion: 2
-    m_RefCount: 222
+    m_RefCount: 221
     m_Data: {fileID: -6743621057647729290, guid: e3282638003fb8841b042f5418dd2d09, type: 3}
   - serializedVersion: 2
     m_RefCount: 208
@@ -22506,7 +22499,7 @@ Tilemap:
     m_RefCount: 197
     m_Data: {fileID: 1836176926968148389, guid: 5e1a5ed1b4fa3ad4e9e95af272679e5c, type: 3}
   - serializedVersion: 2
-    m_RefCount: 29
+    m_RefCount: 28
     m_Data: {fileID: 4373201676397012555, guid: 941a447feb212d24ba63d03afd15d466, type: 3}
   - serializedVersion: 2
     m_RefCount: 56
@@ -22525,7 +22518,7 @@ Tilemap:
     m_Data: {fileID: -6613226119669163666, guid: c3073cef30fcf8a47bee6e2a4ade4ac4, type: 3}
   m_TileMatrixArray:
   - serializedVersion: 2
-    m_RefCount: 1260
+    m_RefCount: 1259
     m_Data:
       e00: 1
       e01: 0
@@ -22564,7 +22557,7 @@ Tilemap:
       e33: 1
   m_TileColorArray:
   - serializedVersion: 2
-    m_RefCount: 1925
+    m_RefCount: 1924
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -23791,18 +23784,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 1474049661}
+  - {fileID: 1147681634}
+  - {fileID: 2085343570}
   enemySpawns:
   - {fileID: 885669705}
   - {fileID: 999903347}
   fuseBox: {fileID: 2035258179}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 15
   amountSpawned: 0
 --- !u!1 &232611727
 GameObject:
@@ -25515,6 +25512,7 @@ MonoBehaviour:
   connectedRooms:
   - {fileID: 928651230}
   - {fileID: 1474049661}
+  - {fileID: 1147681634}
   enemySpawns:
   - {fileID: 1744339606}
   - {fileID: 989403703}
@@ -25522,12 +25520,14 @@ MonoBehaviour:
   fuseBox: {fileID: 756222620}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 20
   amountSpawned: 0
 --- !u!4 &330670852 stripped
 Transform:
@@ -30000,11 +30000,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8289175505809849152, guid: f43818f42a31a634f90d5a4ad3f634ea, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.016210329
+      value: 0.084
       objectReference: {fileID: 0}
     - target: {fileID: 8289175505809849152, guid: f43818f42a31a634f90d5a4ad3f634ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0960459
+      value: 0.373
       objectReference: {fileID: 0}
     - target: {fileID: 8289175505809849152, guid: f43818f42a31a634f90d5a4ad3f634ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39528,6 +39528,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 1490675241}
+  - {fileID: 327554742}
   enemySpawns:
   - {fileID: 1954888512}
   - {fileID: 2105550264}
@@ -39535,12 +39536,14 @@ MonoBehaviour:
   fuseBox: {fileID: 336606669}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 30
   amountSpawned: 0
 --- !u!1 &937606420
 GameObject:
@@ -45101,6 +45104,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 327554742}
+  - {fileID: 230740049}
+  - {fileID: 1233325788}
   enemySpawns:
   - {fileID: 314879385}
   - {fileID: 831221015}
@@ -45108,12 +45113,14 @@ MonoBehaviour:
   fuseBox: {fileID: 120301170}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 20
   amountSpawned: 0
 --- !u!1 &1150825318
 GameObject:
@@ -46677,6 +46684,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 1147681634}
+  - {fileID: 2085343570}
+  - {fileID: 131094401}
   enemySpawns:
   - {fileID: 1458861750}
   - {fileID: 857817063}
@@ -46684,12 +46693,14 @@ MonoBehaviour:
   fuseBox: {fileID: 155791647}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 25
   amountSpawned: 0
 --- !u!1 &1235668338
 GameObject:
@@ -51260,18 +51271,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RoomManager
   connectedRooms:
   - {fileID: 2085343570}
+  - {fileID: 230740049}
+  - {fileID: 327554742}
   enemySpawns:
   - {fileID: 455918363}
   - {fileID: 1967082606}
   fuseBox: {fileID: 2108616610}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 15
   amountSpawned: 0
 --- !u!1 &1474337099
 GameObject:
@@ -51935,6 +51950,7 @@ MonoBehaviour:
   connectedRooms:
   - {fileID: 131094401}
   - {fileID: 2085343570}
+  - {fileID: 928651230}
   enemySpawns:
   - {fileID: 547697958}
   - {fileID: 1718142624}
@@ -51945,12 +51961,14 @@ MonoBehaviour:
   fuseBox: {fileID: 1475546153}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 30
   amountSpawned: 0
 --- !u!1 &1498411361
 GameObject:
@@ -66413,18 +66431,22 @@ MonoBehaviour:
   connectedRooms:
   - {fileID: 230740049}
   - {fileID: 1233325788}
+  - {fileID: 1474049661}
+  - {fileID: 1490675241}
   enemySpawns:
   - {fileID: 1395173977}
   - {fileID: 714640573}
   fuseBox: {fileID: 1997287766}
   player: {fileID: 0}
   spawning: 0
-  enemy: {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
-  spawnSpeed: 8
+  enemy:
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  spawnSpeed: 5
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
   enemiesToSpawn: 0
-  spawnLimit: 1000
+  spawnLimit: 15
   amountSpawned: 0
 --- !u!1 &2086443331
 GameObject:
