@@ -859,7 +859,7 @@ MonoBehaviour:
   speed: 3
   slerp: 1
   distanceToAttack: 3
-  timeToAttack: 0.5
+  timeToAttack: 0.6
   nextWaypointDistance: 3
   exclamationPoint: {fileID: 7725654379439659095}
   hitBox: {fileID: 4658418790302604719}

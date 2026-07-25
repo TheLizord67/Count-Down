@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UIElements;
 
 public enum Forms { Vampire, Chicken };
 public class PlayerMovement : MonoBehaviour
@@ -15,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime, IFrameTime;
 
     [SerializeField] public bool dashing, canDash, canAttack, latched, invincible;
+
+    [SerializeField] public int hp;
 
     private Vector2 _movement;
 
@@ -39,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public RoomManager currentRoom;
 
     [SerializeField] public Transform fuseBoxOn;
+
+    [SerializeField] private BackgroungLightFlicker background;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
@@ -50,7 +55,6 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("HP: " + hp);
         if (currentRoom.fuseBox.off == true)
         {
             fuseBoxOn = currentRoom.fuseBox.transform;
@@ -161,6 +165,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 collision.gameObject.GetComponent<Fusebox>().off = false;
                 switchForm.StartSequence();
+                background.Yellow(false);
             }
         }
         if (dashing)

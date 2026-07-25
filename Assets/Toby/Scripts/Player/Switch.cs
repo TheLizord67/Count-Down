@@ -26,6 +26,8 @@ public class Switch : MonoBehaviour
     [SerializeField] private List<GameObject> lights;
 
     [SerializeField] private bool sequenceStarted;
+
+    [SerializeField] private BackgroungLightFlicker background;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -66,12 +68,13 @@ public class Switch : MonoBehaviour
             float time = Random.Range(timerMin, timerMax);
             yield return new WaitForSeconds(time / 2);
             time = time / 2;
-            lightFlicker.Invoke();
+            //lightFlicker.Invoke();
             yield return new WaitForSeconds(time / 2);
             time = time / 2;
             lightFlicker.Invoke();
             yield return new WaitForSeconds(time);
             countDownChicken.Invoke();
+            background.Yellow(true);
         }
     }
 
@@ -136,18 +139,25 @@ public class Switch : MonoBehaviour
     public IEnumerator Flicker(GameObject light)
     {
         light.SetActive(true);
+        background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(false);
+        background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(true);
+        background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(false);
+        background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(false);
+        background.Yellow(false);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(true);
+        background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
         light.SetActive(false);
+        background.Yellow(true);
     }
     public IEnumerator FlickerText(GameObject light)
     {
