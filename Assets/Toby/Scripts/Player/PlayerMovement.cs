@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.UIElements;
 
@@ -9,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private InputManager manager;
 
-    [SerializeField] private float vampSpeed, vampDash, vampDashDuration, vampDashCooldown;
+    [SerializeField] private float vampSpeed, vampDash, vampDashDuration, vampDashCooldown, speedIncrease;
 
     [SerializeField] private float chickenSpeed, chickenDash, chickenDashDuration, chickenDashCooldown, atkCool;
 
@@ -18,6 +19,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] public bool dashing, canDash, canAttack, latched, invincible, dead;
 
     [SerializeField] public int hp;
+
+    [SerializeField] private float vampAdditionalSpeed;
+
+    [SerializeField] private UnityEvent countDownVampire;
+
+    [SerializeField] private UnityEvent killEvent;
 
     private Vector2 _movement;
 
@@ -50,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
         switchForm.StartSequence();
+        countDownVampire.AddListener(ResetAdditionalMovement);
+        killEvent.AddListener(SpeedIncrease);
     }
 
     // Update is called once per frame
@@ -135,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 else
                 {
-                    rb.linearVelocity = _movement * vampSpeed;
+                    rb.linearVelocity = _movement * (vampSpeed + vampAdditionalSpeed);
                 }
             }
             if (currentForm == Forms.Chicken && dashing == false)
@@ -185,7 +194,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 dashing = true;
                 hitBox.SetActive(true);
-                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash));
+                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed));
+                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed));
             }
             if (currentForm == Forms.Chicken)
             {
@@ -301,5 +311,15 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.up = moveDirection;
         }
+    }
+
+    public void ResetAdditionalMovement()
+    {
+        vampAdditionalSpeed = 0;
+    }
+
+    public void SpeedIncrease()
+    {
+        vampAdditionalSpeed += speedIncrease;
     }
 }

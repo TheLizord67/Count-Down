@@ -1,11 +1,15 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class KillCount : MonoBehaviour
 {
     [SerializeField] public static int kills;
     [SerializeField] public static float speedIncrease;
     [SerializeField] public List<RoomManager> rooms;
+
+    [SerializeField] private UnityEvent killEvent;
+
     public void OnDestroy()
     {
         int currentMaxKills = PlayerPrefs.GetInt("Max Kills");
@@ -25,9 +29,15 @@ public class KillCount : MonoBehaviour
     }
     public void UpdateAllRooms()
     {
+
+        killEvent.Invoke();
+
         foreach (var room in rooms)
         {
             room.AdjustSettings();
         }
+        //speed increase from this cause it's convenient
+        
+
     }
 }
