@@ -12,14 +12,13 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float chickenSpeed, chickenDash, chickenDashDuration, chickenDashCooldown, atkCool;
 
-    [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime;
+    [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime, IFrameTime;
 
-    [SerializeField] public bool dashing, canDash, canAttack, latched;
+    [SerializeField] public bool dashing, canDash, canAttack, latched, invincible;
 
     private Vector2 _movement;
 
     private Rigidbody2D rb;
-    
 
     [SerializeField] public Forms currentForm;
 
@@ -51,6 +50,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("HP: " + hp);
         if (currentRoom.fuseBox.off == true)
         {
             fuseBoxOn = currentRoom.fuseBox.transform;
@@ -147,7 +147,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Room"))
+        if (collision.gameObject.CompareTag("Room") && currentRoom != collision.gameObject.GetComponent<RoomManager>())
         {
             currentRoom = collision.gameObject.GetComponent<RoomManager>();
             currentRoom.InitalSpawn();
@@ -269,6 +269,12 @@ public class PlayerMovement : MonoBehaviour
         target.GetComponent<EnemyController>().enabled = false;
         target.GetComponent<CapsuleCollider2D>().enabled = false;
         target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+    }
+    public IEnumerator IFrames()
+    {
+        invincible = true;
+        yield return new WaitForSeconds(IFrameTime);
+        invincible = false;
     }
     public void LookAtMouse()
     {

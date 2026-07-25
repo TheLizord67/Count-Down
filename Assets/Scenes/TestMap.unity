@@ -22255,10 +22255,13 @@ MonoBehaviour:
   rotateSpeed: 10
   animWaitTime: 0.5
   latchedTime: 0.2
+  IFrameTime: 1
   dashing: 0
   canDash: 1
   canAttack: 1
   latched: 0
+  invincible: 0
+  hp: 3
   currentForm: 0
   mainCam: {fileID: 1521434044}
   hitBox: {fileID: 1108796857}
@@ -28313,6 +28316,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 6723372957880596290, guid: 800c6235f86ee644096fd3b69ccdd37a, type: 3}
+    - target: {fileID: 3828694236228368654, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4156248775134442331, guid: 2b33ec94ca1e6f2448104fda6c44f982, type: 3}
       propertyPath: m_Size.x
       value: 0.56
