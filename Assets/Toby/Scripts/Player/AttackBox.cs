@@ -13,6 +13,7 @@ public class AttackBox : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
+            KillCount.enemiesSpawnedGlobal -= 1;
             player.currentRoom.amountSpawned -= 1;
             if (player.currentRoom.amountSpawned < 0)
             {
@@ -38,6 +39,7 @@ public class AttackBox : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
+            KillCount.enemiesSpawnedGlobal -= 1;
             //particles
             player.mainCam.GetComponent<CameraFollow>().kill = true;
             KillCount.kills += 1;
