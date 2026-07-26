@@ -109,10 +109,6 @@ public class Switch : MonoBehaviour
             {
                 e.ChooseTarget();
             }
-            foreach (var light in lights)
-            {
-                light.SetActive(true);
-            }
             yield return new WaitForSeconds(1f);
             //fun effect
             text.SetActive(false);
@@ -124,10 +120,6 @@ public class Switch : MonoBehaviour
             player.dashing = false;
             player.canDash = true;
             player.canAttack = true;
-            foreach (var light in lights)
-            {
-                light.SetActive(false);
-            }
             text.SetActive(true);
             globalLight.intensity = 0.3f;
             player.currentForm = Forms.Vampire;

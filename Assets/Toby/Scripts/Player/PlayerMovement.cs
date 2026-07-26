@@ -12,17 +12,17 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private InputManager manager;
 
-    [SerializeField] private float vampSpeed, vampDash, vampDashDuration, vampDashCooldown, speedIncrease;
+    [SerializeField] public float vampSpeed, vampDash, vampDashDuration, vampDashCooldown, speedIncrease;
 
     [SerializeField] private float chickenSpeed, chickenDash, chickenDashDuration, chickenDashCooldown, atkCool;
 
-    [SerializeField] private float speedCap, rotateSpeed, animWaitTime, latchedTime, IFrameTime;
+    [SerializeField] public float speedCap, rotateSpeed, animWaitTime, latchedTime, IFrameTime;
 
     [SerializeField] public bool dashing, canDash, canAttack, latched, invincible, dead;
 
     [SerializeField] public int hp;
 
-    [SerializeField] private float vampAdditionalSpeed;
+    [SerializeField] public float vampAdditionalSpeed;
 
     [SerializeField] private UnityEvent killEvent;
 
@@ -294,6 +294,8 @@ public class PlayerMovement : MonoBehaviour
         killEvent.Invoke();
         KillCount kill = FindAnyObjectByType<KillCount>();
         kill.UpdateAllRooms();
+        canAttack = true;
+        canDash = true;
         target.GetComponent<EnemyController>().seeker.enabled = false;
         target.GetComponent<EnemyController>().chomp.SetActive(false);
         target.GetComponent<EnemyController>().sprite.Die();
