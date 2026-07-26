@@ -40,7 +40,7 @@ public class RoomManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (spawning)
+        if (spawning && KillCount.enemiesSpawnedGlobal < 200)
         {
             enemiesToSpawn = Random.Range(minEnemiesToSpawn, maxEnemiesToSpawn);
             for (int i = 0; i <= enemiesToSpawn; i++)
@@ -68,31 +68,33 @@ public class RoomManager : MonoBehaviour
             }
         }
     }
-
     public void InitalSpawn()
     {
-        enemiesToSpawn = Random.Range(minEnemiesToSpawn + 1, maxEnemiesToSpawn + 1);
-        for (int i = 0; i <= enemiesToSpawn; i++)
+        if (KillCount.enemiesSpawnedGlobal < 200)
         {
-            if (amountSpawned < spawnLimit)
+            enemiesToSpawn = Random.Range(minEnemiesToSpawn + 1, maxEnemiesToSpawn + 1);
+            for (int i = 0; i <= enemiesToSpawn; i++)
             {
-                amountSpawned++;
-                enemySpawns = (List<Transform>)enemySpawns.Shuffle();
-                Transform spawn = enemySpawns[0];
-                int loops = 0;
-
-                while ((spawn.position - player.transform.position).magnitude < 20 && loops < 10)
+                if (amountSpawned < spawnLimit)
                 {
+                    amountSpawned++;
                     enemySpawns = (List<Transform>)enemySpawns.Shuffle();
-                    spawn = enemySpawns[0];
-                    loops++;
-                    Debug.Log(loops);
-                    Debug.Log(enemySpawns[0]);
-                }
+                    Transform spawn = enemySpawns[0];
+                    int loops = 0;
 
-                if (loops < 10)
-                    enemy = (List<GameObject>)enemy.Shuffle();
-                    Instantiate(enemy[0], spawn.position, Quaternion.identity);
+                    while ((spawn.position - player.transform.position).magnitude < 20 && loops < 10)
+                    {
+                        enemySpawns = (List<Transform>)enemySpawns.Shuffle();
+                        spawn = enemySpawns[0];
+                        loops++;
+                        Debug.Log(loops);
+                        Debug.Log(enemySpawns[0]);
+                    }
+
+                    if (loops < 10)
+                        enemy = (List<GameObject>)enemy.Shuffle();
+                        Instantiate(enemy[0], spawn.position, Quaternion.identity);
+                }
             }
         }
     }

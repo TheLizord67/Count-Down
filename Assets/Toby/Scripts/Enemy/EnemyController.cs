@@ -63,7 +63,6 @@ public class EnemyController : MonoBehaviour
     {
         KillCount.enemiesSpawnedGlobal += 1;
         speed = speed + KillCount.speedIncrease;
-        //AstarPath.active.Scan();
         attackStyle = attackStylesList[Random.Range(0, attackStylesList.Length)];
         GameObject[] points = GameObject.FindGameObjectsWithTag("Retreat");
         foreach (var point in points)
@@ -102,10 +101,10 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         float playerDistance = Vector2.Distance(rb.position, player.gameObject.transform.position);
-        if (playerDistance >= distanceToDespawn)
-        {
-            Destroy(gameObject, 1f);
-        }
+        //if (playerDistance >= distanceToDespawn)
+        //{
+            //Destroy(gameObject, 1f);
+        //}
         if (player.currentForm == Forms.Chicken && state != States.Attacking)
         {
             state = States.Following;
@@ -144,7 +143,7 @@ public class EnemyController : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
-        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, direction * (speed + 2), Time.deltaTime * slerp);
+        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, direction * speed, Time.deltaTime * slerp);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
@@ -223,7 +222,7 @@ public class EnemyController : MonoBehaviour
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
-        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, direction * speed, Time.deltaTime * slerp);
+        rb.linearVelocity = Vector2.Lerp(rb.linearVelocity, direction * (speed + 2), Time.deltaTime * slerp);
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
@@ -238,7 +237,7 @@ public class EnemyController : MonoBehaviour
 
         if (targetDistance <= distanceToAttack)
         {
-            rb.linearVelocity = Vector2.zero;
+            FindRetreat();
         }
         
         if (playerDistance <= run)
@@ -254,21 +253,8 @@ public class EnemyController : MonoBehaviour
         {
             retreatPoints.Add(point);
         }
-        List<float> distances = new List<float>();
-        foreach (var point in retreatPoints)
-        {
-            float distance = Vector2.Distance(rb.position, point.transform.position);
-            distances.Add(distance);
-        }
-        distances.Sort();
-        foreach (var point in retreatPoints)
-        {
-            float distance = Vector2.Distance(rb.position, point.transform.position);
-            if (distance == distances[0])
-            {
-                target = point.transform;
-            }
-        }
+        retreatPoints = (List<GameObject>)retreatPoints.Shuffle();
+        target = retreatPoints[0].transform;
         state = States.Running;
     }
     public void FindSecondRetreat()
@@ -276,21 +262,20 @@ public class EnemyController : MonoBehaviour
         List<float> distances = new List<float>();
         foreach (var point in retreatPoints)
         {
-            float distance = Vector2.Distance(rb.position, point.transform.position);
+            float distance = Vector2.Distance(player.transform.position, point.transform.position);
             distances.Add(distance);
         }
         distances.Sort();
         foreach (var point in retreatPoints)
         {
             float distance = Vector2.Distance(rb.position, point.transform.position);
-            if (distance == distances[1])
+            if (distance == distances.IndexOf(distances.Count - 1))
             {
                 target = point.transform;
             }
         }
         state = States.Running;
     }
-
     public void ChooseTarget()
     {
         if (attackStyle == AttackStyles.Direct)
