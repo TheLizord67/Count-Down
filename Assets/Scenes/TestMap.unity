@@ -27558,6 +27558,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackBox
   player: {fileID: 839375312}
+  killEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 839375312}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: SpeedIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &377807145
 GameObject:
   m_ObjectHideFlags: 0
@@ -39006,13 +39021,13 @@ MonoBehaviour:
   vampDash: 15
   vampDashDuration: 0.2
   vampDashCooldown: 0.5
-  speedIncrease: 0
+  speedIncrease: 1
   chickenSpeed: 15
   chickenDash: 25
   chickenDashDuration: 0.5
   chickenDashCooldown: 0.5
   atkCool: 0.5
-  speedCap: 10
+  speedCap: 20
   rotateSpeed: 10
   animWaitTime: 0.5
   latchedTime: 0.2
@@ -39025,12 +39040,21 @@ MonoBehaviour:
   dead: 0
   hp: 3
   vampAdditionalSpeed: 0
-  countDownVampire:
-    m_PersistentCalls:
-      m_Calls: []
   killEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 839375312}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: SpeedIncrease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   currentForm: 0
   mainCam: {fileID: 1521434044}
   hitBox: {fileID: 1108796857}
@@ -39208,6 +39232,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 1873926746}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 839375312}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: ResetAdditionalMovement
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -46042,6 +46078,7 @@ PolygonCollider2D:
     m_Paths:
     - - {x: 0, y: 0.5773587}
       - {x: -0.5, y: -0.28866667}
+      - {x: -0.0026843888, y: -0.5602227}
       - {x: 0.5, y: -0.28866667}
   m_UseDelaunayMesh: 1
 --- !u!114 &1108796861
@@ -69492,9 +69529,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KillCount
   rooms: []
-  killEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &2029682924
 GameObject:
   m_ObjectHideFlags: 0

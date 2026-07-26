@@ -8,7 +8,6 @@ public class KillCount : MonoBehaviour
     [SerializeField] public static float speedIncrease;
     [SerializeField] public List<RoomManager> rooms;
 
-    [SerializeField] private UnityEvent killEvent;
 
     public void OnDestroy()
     {
@@ -30,7 +29,6 @@ public class KillCount : MonoBehaviour
     }
     public void UpdateAllRooms()
     {
-        killEvent.Invoke();
 
         foreach (var room in rooms)
         {

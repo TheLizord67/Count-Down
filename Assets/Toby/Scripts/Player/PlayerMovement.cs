@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private float vampAdditionalSpeed;
 
-    [SerializeField] private UnityEvent countDownVampire;
-
     [SerializeField] private UnityEvent killEvent;
 
     private Vector2 _movement;
@@ -78,7 +76,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
         switchForm.StartSequence();
-        countDownVampire.AddListener(ResetAdditionalMovement);
         killEvent.AddListener(SpeedIncrease);
     }
 
@@ -159,24 +156,21 @@ public class PlayerMovement : MonoBehaviour
             FollowMovement();
             if (currentForm == Forms.Vampire && dashing == false)
             {
+
+                rb.linearVelocity = _movement * (vampSpeed + vampAdditionalSpeed);
+
                 if (rb.linearVelocity.magnitude > speedCap)
                 {
                     rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
-                }
-                else
-                {
-                    rb.linearVelocity = _movement * (vampSpeed + vampAdditionalSpeed);
                 }
             }
             if (currentForm == Forms.Chicken && dashing == false)
             {
+
+                rb.linearVelocity = _movement * chickenSpeed;
                 if (rb.linearVelocity.magnitude > speedCap)
                 {
                     rb.linearVelocity = rb.linearVelocity.normalized * speedCap;
-                }
-                else
-                {
-                    rb.linearVelocity = _movement * chickenSpeed;
                 }
             }
         }
@@ -215,8 +209,8 @@ public class PlayerMovement : MonoBehaviour
             {
                 dashing = true;
                 hitBox.SetActive(true);
-                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed));
-                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed));
+                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed * 1.5f));
+                StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed * 1.5f));
             }
             if (currentForm == Forms.Chicken)
             {
@@ -245,6 +239,7 @@ public class PlayerMovement : MonoBehaviour
     {
         canDash = false;
         rb.linearVelocity = new Vector2(_movement.x * speed, _movement.y * speed);
+        if (rb.linearVelocity.magnitude > speedCap * 3) rb.linearVelocity = rb.linearVelocity.normalized * speedCap * 3;
         yield return new WaitForSeconds(duration);
         if (latched == false)
         {
@@ -296,6 +291,7 @@ public class PlayerMovement : MonoBehaviour
             currentRoom.InitalSpawn();
         }
         KillCount.kills += 1;
+        killEvent.Invoke();
         KillCount kill = FindAnyObjectByType<KillCount>();
         kill.UpdateAllRooms();
         target.GetComponent<EnemyController>().seeker.enabled = false;
@@ -334,10 +330,12 @@ public class PlayerMovement : MonoBehaviour
     public void ResetAdditionalMovement()
     {
         vampAdditionalSpeed = 0;
+        Debug.Log("count down called");
     }
 
     public void SpeedIncrease()
     {
+        Debug.Log("kill event called");
         vampAdditionalSpeed += speedIncrease;
     }
 }
