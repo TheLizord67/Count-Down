@@ -21,7 +21,8 @@ public class EnemyHitBox : MonoBehaviour
                     collision.gameObject.GetComponent<PlayerMovement>().sprite.Die();
                     collision.gameObject.GetComponent<PlayerMovement>().dead = true;
                     collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
-                    collision.gameObject.GetComponent<PlayerMovement>().gameOver.SetActive(true);
+                    GameOver game = FindAnyObjectByType<GameOver>();
+                    game.StartCoroutine(game.OverOver());
                     collision.gameObject.GetComponent<CircleCollider2D>().enabled = false;
                     collision.gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
                 }

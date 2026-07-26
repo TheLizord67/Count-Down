@@ -6,6 +6,7 @@ public class KillCount : MonoBehaviour
 {
     [SerializeField] public static int kills;
     [SerializeField] public static float speedIncrease;
+    [SerializeField] public static int enemiesSpawnedGlobal;
     [SerializeField] public List<RoomManager> rooms;
     private PlayerMovement player;
     private KillCountJuice killCountJuice;

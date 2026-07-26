@@ -55,8 +55,13 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] public bool ranged;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void OnDestroy()
+    {
+        KillCount.enemiesSpawnedGlobal -= 1;
+    }
     void Start()
     {
+        KillCount.enemiesSpawnedGlobal += 1;
         speed = speed + KillCount.speedIncrease;
         //AstarPath.active.Scan();
         attackStyle = attackStylesList[Random.Range(0, attackStylesList.Length)];
