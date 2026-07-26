@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public Volume globalVolume;
 
-    public int killStreak;
+    public int killStreak, fuseBoxTouched;
 
     [SerializeField] public float duration, magnitude;
     [SerializeField] private ScreenShake screenShake;
@@ -195,6 +195,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<Fusebox>().off)
             {
+                fuseBoxTouched += 1;
                 collision.gameObject.GetComponent<Fusebox>().off = false;
                 collision.gameObject.GetComponent<Fusebox>().StartCoroutine(collision.gameObject.GetComponent<Fusebox>().SparksFly());
                 switchForm.StartSequence();
