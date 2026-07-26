@@ -60,6 +60,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private ScreenShake screenShake;
 
     private Vignette vignetteEffect;
+
+    [SerializeField] public AudioSource swipe, dash, footstepsVamp, footstepsChicken, bite;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public void Hurt()
