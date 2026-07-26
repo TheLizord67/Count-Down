@@ -950,7 +950,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyController
   target: {fileID: 0}
   player: {fileID: 0}
-  speed: 3
+  speed: 4.5
   slerp: 1
   distanceToAttack: 3
   timeToAttack: 0.6
