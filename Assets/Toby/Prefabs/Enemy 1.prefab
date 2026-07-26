@@ -1188,7 +1188,7 @@ MonoBehaviour:
   nextWaypointDistance: 3
   exclamationPoint: {fileID: 7725654379439659095}
   hitBox: {fileID: 4658418790302604719}
-  blood: {fileID: 0}
+  blood: {fileID: 9167626158170355155}
   retreatPoints: []
   sprite: {fileID: 6017005904352431940}
   seeker: {fileID: 0}
@@ -1570,5 +1570,10 @@ PrefabInstance:
 --- !u!4 &6054688587367215841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1061465781858289816, guid: 9f71595eaff5a584d8e76167e950591b, type: 3}
+  m_PrefabInstance: {fileID: 6538530332525148793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &9167626158170355155 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2703415259520405418, guid: 9f71595eaff5a584d8e76167e950591b, type: 3}
   m_PrefabInstance: {fileID: 6538530332525148793}
   m_PrefabAsset: {fileID: 0}
