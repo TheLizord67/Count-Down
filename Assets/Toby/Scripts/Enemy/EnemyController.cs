@@ -1,9 +1,10 @@
 using Pathfinding;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
-using System.Linq;
+using static UnityEngine.ParticleSystem;
 public enum States
 {
     Following,
@@ -29,7 +30,7 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] public float nextWaypointDistance = 3f;
 
-    [SerializeField] private GameObject exclamationPoint, hitBox;
+    [SerializeField] private GameObject exclamationPoint, hitBox, blood;
 
     [SerializeField] public List<GameObject> retreatPoints;
 
@@ -320,5 +321,11 @@ public class EnemyController : MonoBehaviour
         {
             target = player.transform;
         }
+    }
+    public IEnumerator EnemyParts()
+    {
+        blood.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        blood.SetActive(false);
     }
 }

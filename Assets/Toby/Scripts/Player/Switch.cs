@@ -104,6 +104,7 @@ public class Switch : MonoBehaviour
             FindEnemies();
             text.SetActive(true);
             player.currentForm = Forms.Chicken;
+            player.StartCoroutine(player.gameObject.GetComponent<PlayerMovement>().PlayerParticles(player.gameObject.GetComponent<PlayerMovement>().feathers));
             player.currentRoom.SwitchRooms();
             foreach (var e in enemies)
             {
@@ -123,6 +124,7 @@ public class Switch : MonoBehaviour
             text.SetActive(true);
             globalLight.intensity = 0.3f;
             player.currentForm = Forms.Vampire;
+            player.StartCoroutine(player.gameObject.GetComponent<PlayerMovement>().PlayerParticles(player.gameObject.GetComponent<PlayerMovement>().emo));
             StartCoroutine(TurnOff(text));
             yield return new WaitForSeconds(1f);
             FindEnemies();

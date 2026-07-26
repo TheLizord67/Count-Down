@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private BackgroungLightFlicker background;
 
-    [SerializeField] public GameObject gameOver;
+    [SerializeField] public GameObject gameOver, blood, feathers, emo;
 
     [SerializeField] public Volume globalVolume;
 
@@ -191,6 +191,7 @@ public class PlayerMovement : MonoBehaviour
             if (collision.gameObject.GetComponent<Fusebox>().off)
             {
                 collision.gameObject.GetComponent<Fusebox>().off = false;
+                collision.gameObject.GetComponent<Fusebox>().StartCoroutine(collision.gameObject.GetComponent<Fusebox>().SparksFly());
                 switchForm.StartSequence();
                 background.Yellow(false);
             }
@@ -278,6 +279,12 @@ public class PlayerMovement : MonoBehaviour
             StartCoroutine(Bite(target));
             //particle effects
         }
+    }
+    public IEnumerator PlayerParticles(GameObject particles)
+    {
+        particles.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        particles.SetActive(false);
     }
     public IEnumerator Bite(GameObject target)
     {
