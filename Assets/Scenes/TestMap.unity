@@ -3084,8 +3084,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -24189,8 +24192,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -26198,8 +26204,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -39998,6 +40007,11 @@ MonoBehaviour:
   duration: 0
   magnitude: 0
   screenShake: {fileID: 0}
+  swipe: {fileID: 0}
+  dash: {fileID: 0}
+  footstepsVamp: {fileID: 0}
+  footstepsChicken: {fileID: 0}
+  bite: {fileID: 0}
 --- !u!4 &839375316
 Transform:
   m_ObjectHideFlags: 0
@@ -43544,8 +43558,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -49800,8 +49817,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -52011,8 +52031,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -62940,8 +62963,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -63685,8 +63711,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2
@@ -76650,7 +76679,7 @@ MonoBehaviour:
   text: {fileID: 0}
   unlocked: 0
   name: Kills2
-  image: {fileID: 245629190}
+  image: {fileID: 1769439763}
   index: 50
 --- !u!114 &1769439763
 MonoBehaviour:
@@ -86758,8 +86787,11 @@ MonoBehaviour:
   player: {fileID: 0}
   spawning: 0
   enemy:
-  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   - {fileID: 7160090809763421518, guid: 9af04974df7f00347a884143bd1652dd, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
+  - {fileID: 7160090809763421518, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
   spawnSpeed: 6
   maxEnemiesToSpawn: 4
   minEnemiesToSpawn: 2

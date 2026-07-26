@@ -163,7 +163,10 @@ public class PlayerMovement : MonoBehaviour
             FollowMovement();
             if (currentForm == Forms.Vampire && dashing == false)
             {
-
+                if (rb.linearVelocity.magnitude > 0.1f)
+                {
+                    footstepsVamp.Play();
+                }
                 rb.linearVelocity = _movement * (vampSpeed + vampAdditionalSpeed);
 
                 if (rb.linearVelocity.magnitude > speedCap)
@@ -173,7 +176,10 @@ public class PlayerMovement : MonoBehaviour
             }
             if (currentForm == Forms.Chicken && dashing == false)
             {
-
+                if (rb.linearVelocity.magnitude > 0.1f)
+                {
+                    footstepsChicken.Play();
+                }
                 rb.linearVelocity = _movement * chickenSpeed;
                 if (rb.linearVelocity.magnitude > speedCap)
                 {
@@ -216,6 +222,7 @@ public class PlayerMovement : MonoBehaviour
             canAttack = false;
             if (currentForm == Forms.Vampire)
             {
+                dash.Play();
                 dashing = true;
                 hitBox.SetActive(true);
                 StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed * 1.5f));
@@ -232,6 +239,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (canAttack == true && currentForm == Forms.Vampire)
         {
+            swipe.Play();
             canAttack = false;
             attackBox.SetActive(true);
             StartCoroutine(StopAttack());

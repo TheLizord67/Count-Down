@@ -41,27 +41,7 @@ public class AchievementManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        foreach (var ach in achievementsStreak)
-        {
-            if (ach.unlocked == true)
-            {
-                achievementsStreak.Remove(ach);
-            }
-        }
-        foreach (var ach in achievementsKills)
-        {
-            if (ach.unlocked == true)
-            {
-                achievementsKills.Remove(ach);
-            }
-        }
-        foreach (var ach in achievementsSurvive)
-        {
-            if (ach.unlocked == true)
-            {
-                achievementsSurvive.Remove(ach);
-            }
-        }
+        ResetCheck();
         if (player.currentForm == Forms.Chicken)
         {
             timeAsChicken += Time.deltaTime;
@@ -73,6 +53,39 @@ public class AchievementManager : MonoBehaviour
         CheckForUnlocks();
     }
 
+    public void ResetCheck()
+    {
+        if (achievementsStreak != null)
+        {
+            foreach (var ach in achievementsStreak)
+            {
+                if (ach.unlocked == true)
+                {
+                    achievementsStreak.Remove(ach);
+                }
+            }
+        }
+        if (achievementsKills != null)
+        {
+            foreach (var ach in achievementsKills)
+            {
+                if (ach.unlocked == true)
+                {
+                    achievementsKills.Remove(ach);
+                }
+            }
+        }
+        if (achievementsSurvive != null)
+        {
+            foreach (var ach in achievementsSurvive)
+            {
+                if (ach.unlocked == true)
+                {
+                    achievementsSurvive.Remove(ach);
+                }
+            }
+        }
+    }
     public void CheckForUnlocks()
     {
         foreach (var ach in achievementsStreak)

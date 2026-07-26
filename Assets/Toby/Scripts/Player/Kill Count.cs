@@ -26,6 +26,7 @@ public class KillCount : MonoBehaviour
 
     void Start()
     {
+        speedIncrease = 0;
         kills = 0;
         player = FindAnyObjectByType<PlayerMovement>();
         killCountJuice = FindAnyObjectByType<KillCountJuice>();

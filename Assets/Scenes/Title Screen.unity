@@ -7005,7 +7005,7 @@ MonoBehaviour:
   text: {fileID: 0}
   unlocked: 0
   name: Kills2
-  image: {fileID: 1490812393}
+  image: {fileID: 1824889473}
   index: 50
 --- !u!1 &1887165284
 GameObject:
@@ -7930,7 +7930,7 @@ MonoBehaviour:
   text: {fileID: 0}
   unlocked: 0
   name: Survive3
-  image: {fileID: 1490812393}
+  image: {fileID: 2011060988}
   index: 10
 --- !u!1 &2054326257
 GameObject:
