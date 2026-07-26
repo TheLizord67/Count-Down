@@ -18,6 +18,8 @@ public class EnemyHitBox : MonoBehaviour
                 else
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().StartCoroutine(collision.gameObject.GetComponent<PlayerMovement>().PlayerParticles(collision.gameObject.GetComponent<PlayerMovement>().blood));
+                    collision.gameObject.GetComponent<PlayerMovement>().switchForm.chickenMusic.pitch = 0.5f;
+                    collision.gameObject.GetComponent<PlayerMovement>().switchForm.vampMusic.pitch = 0.5f;
                     collision.gameObject.GetComponent<PlayerMovement>().sprite.Die();
                     collision.gameObject.GetComponent<PlayerMovement>().dead = true;
                     collision.gameObject.GetComponent<PlayerMovement>().enabled = false;

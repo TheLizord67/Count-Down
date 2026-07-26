@@ -40,6 +40,8 @@ public class SpriteCharacterControl : MonoBehaviour
 
     private Vector3 weaponPos;
     private Quaternion weaponRot;
+
+    public AudioSource hurt;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -156,6 +158,7 @@ public class SpriteCharacterControl : MonoBehaviour
 
     public void Die()
     {
+        hurt.Play();
         if (!isPlayer)
         {
         body.GetComponent<SpriteRenderer>().color = deadTint;

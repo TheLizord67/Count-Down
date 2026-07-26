@@ -55,6 +55,8 @@ public class EnemyController : MonoBehaviour
 
     [SerializeField] public bool ranged;
 
+    public AudioSource attack;
+
     public bool doomed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnDestroy()
@@ -118,7 +120,14 @@ public class EnemyController : MonoBehaviour
         }
         if (state == States.Following)
         {
-            Following();
+            if (player.isActiveAndEnabled == false)
+            {
+                state = States.Running;
+            }
+            else
+            {
+                Following();
+            }
         }
         if (state == States.Running)
         {
@@ -167,6 +176,7 @@ public class EnemyController : MonoBehaviour
     {
         if (!ranged)
         {
+            attack.Play();
             sprite.Attack(timeToAttack);
             rb.linearVelocity = Vector2.zero;
             exclamationPoint.SetActive(true);
@@ -182,6 +192,7 @@ public class EnemyController : MonoBehaviour
         }
         else
         {
+            attack.Play();
             sprite.Attack(timeToAttack);
             rb.linearVelocity = Vector2.zero;
             exclamationPoint.SetActive(true);

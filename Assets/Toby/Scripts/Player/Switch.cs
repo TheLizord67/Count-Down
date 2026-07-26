@@ -31,6 +31,8 @@ public class Switch : MonoBehaviour
     [SerializeField] private bool sequenceStarted;
 
     [SerializeField] private BackgroungLightFlicker background;
+
+    [SerializeField] public AudioSource countAudio, downAudio, chickenMusic, vampMusic, flicker;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,7 +42,16 @@ public class Switch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (player.currentForm == Forms.Vampire)
+        {
+            chickenMusic.mute = true;
+            vampMusic.mute = false;
+        }
+        else
+        {
+            vampMusic.mute = true;
+            chickenMusic.mute = false;
+        }
     }
 
     public void FindEnemies()
@@ -104,6 +115,7 @@ public class Switch : MonoBehaviour
             FindEnemies();
             text.SetActive(true);
             player.currentForm = Forms.Chicken;
+            downAudio.Play();
             player.StartCoroutine(player.gameObject.GetComponent<PlayerMovement>().PlayerParticles(player.gameObject.GetComponent<PlayerMovement>().feathers));
             player.currentRoom.SwitchRooms();
             foreach (var e in enemies)
@@ -124,6 +136,7 @@ public class Switch : MonoBehaviour
             text.SetActive(true);
             globalLight.intensity = 0.3f;
             player.currentForm = Forms.Vampire;
+            countAudio.Play();
             player.StartCoroutine(player.gameObject.GetComponent<PlayerMovement>().PlayerParticles(player.gameObject.GetComponent<PlayerMovement>().emo));
             StartCoroutine(TurnOff(text));
             yield return new WaitForSeconds(1f);
@@ -146,6 +159,7 @@ public class Switch : MonoBehaviour
     }
     public IEnumerator Flicker()
     {
+        flicker.Play();
         globalLight.intensity = 1f;
         background.Yellow(true);
         yield return new WaitForSeconds(0.5f);
@@ -166,6 +180,7 @@ public class Switch : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         globalLight.intensity = 1f;
         background.Yellow(true);
+        flicker.Stop();
     }
     public IEnumerator FlickerText(GameObject light)
     {

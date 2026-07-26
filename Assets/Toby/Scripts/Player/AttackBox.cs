@@ -9,7 +9,7 @@ public class AttackBox : MonoBehaviour
     [SerializeField] public float duration, magnitude;
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        screenShake = FindAnyObjectByType<ScreenShake>();
+        //screenShake = FindAnyObjectByType<ScreenShake>();
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
@@ -26,7 +26,7 @@ public class AttackBox : MonoBehaviour
                 KillCount kill = FindAnyObjectByType<KillCount>();
                 kill.UpdateAllRooms();
             }
-            screenShake.Shake(duration, magnitude);
+            //screenShake.Shake(duration, magnitude);
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;

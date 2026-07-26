@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private GameObject hitBox, attackBox, chicken, vampire, dashParts;
 
-    [SerializeField] private Switch switchForm;
+    [SerializeField] public Switch switchForm;
 
     [SerializeField] public List<GameObject> hits, hearts;
 
@@ -61,12 +61,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Vignette vignetteEffect;
 
-    [SerializeField] public AudioSource swipe, dash, footstepsVamp, footstepsChicken, bite;
+    [SerializeField] public AudioSource swipe, dash, footstepsVamp, bite, hurt, fuse;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     public void Hurt()
     {
-        if (currentForm == Forms.Chicken) { 
+        if (currentForm == Forms.Chicken) {
+            hurt.Play();
             vignetteEffect.intensity.value = 0.7f;
             hp -= 1;
             Destroy(hearts[0].gameObject);
@@ -161,12 +162,17 @@ public class PlayerMovement : MonoBehaviour
             }
             _movement.Set(InputManager.movement.x, InputManager.movement.y);
             FollowMovement();
+            if (rb.linearVelocity.magnitude > 0.1f)
+            {
+                if (!footstepsVamp.isPlaying)
+                footstepsVamp.Play();
+            }
+            else
+            {
+                footstepsVamp.Stop();
+            }
             if (currentForm == Forms.Vampire && dashing == false)
             {
-                if (rb.linearVelocity.magnitude > 0.1f)
-                {
-                    footstepsVamp.Play();
-                }
                 rb.linearVelocity = _movement * (vampSpeed + vampAdditionalSpeed);
 
                 if (rb.linearVelocity.magnitude > speedCap)
@@ -176,10 +182,6 @@ public class PlayerMovement : MonoBehaviour
             }
             if (currentForm == Forms.Chicken && dashing == false)
             {
-                if (rb.linearVelocity.magnitude > 0.1f)
-                {
-                    footstepsChicken.Play();
-                }
                 rb.linearVelocity = _movement * chickenSpeed;
                 if (rb.linearVelocity.magnitude > speedCap)
                 {
@@ -203,6 +205,7 @@ public class PlayerMovement : MonoBehaviour
         {
             if (collision.gameObject.GetComponent<Fusebox>().off)
             {
+                fuse.Play();
                 fuseBoxTouched += 1;
                 collision.gameObject.GetComponent<Fusebox>().off = false;
                 collision.gameObject.GetComponent<Fusebox>().StartCoroutine(collision.gameObject.GetComponent<Fusebox>().SparksFly());
@@ -220,9 +223,9 @@ public class PlayerMovement : MonoBehaviour
         if (context.started && dashing == false && canDash == true && dead == false)
         {
             canAttack = false;
+            dash.Play();
             if (currentForm == Forms.Vampire)
             {
-                dash.Play();
                 dashing = true;
                 hitBox.SetActive(true);
                 StartCoroutine(Cooldown(vampDashCooldown, vampDashDuration, vampDash + vampAdditionalSpeed * 1.5f));
@@ -291,6 +294,8 @@ public class PlayerMovement : MonoBehaviour
             latched = true;
             hitBox.SetActive(false);
             rb.linearVelocity = Vector2.zero;
+            target.GetComponent<EnemyController>().speed = 0;
+            target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
             transform.position = target.transform.position;
             StartCoroutine(Bite(target));
             //particle effects
@@ -304,7 +309,8 @@ public class PlayerMovement : MonoBehaviour
     }
     public IEnumerator Bite(GameObject target)
     {
-        screenShake.Shake(duration, magnitude);
+        bite.Play();
+        //screenShake.Shake(duration, magnitude);
         target.GetComponent<EnemyController>().chomp.SetActive(true);
         mainCam.GetComponent<CameraFollow>().kill = true;
         target.GetComponent<EnemyController>().doomed = true;
