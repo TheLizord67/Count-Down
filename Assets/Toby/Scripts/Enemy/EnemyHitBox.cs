@@ -13,11 +13,11 @@ public class EnemyHitBox : MonoBehaviour
                 if (collision.gameObject.GetComponent<PlayerMovement>().hp > 0)
                 {
                     collision.gameObject.GetComponent<PlayerMovement>().Hurt();
-                    collision.gameObject.GetComponent<PlayerMovement>().StartCoroutine(collision.gameObject.GetComponent<PlayerMovement>().PlayerParticles(collision.gameObject.GetComponent<PlayerMovement>().blood));
+                    //collision.gameObject.GetComponent<PlayerMovement>().StartCoroutine(collision.gameObject.GetComponent<PlayerMovement>().PlayerParticles(collision.gameObject.GetComponent<PlayerMovement>().blood));
                 }
                 else
                 {
-                    collision.gameObject.GetComponent<PlayerMovement>().StartCoroutine(collision.gameObject.GetComponent<PlayerMovement>().PlayerParticles(collision.gameObject.GetComponent<PlayerMovement>().blood));
+                   // collision.gameObject.GetComponent<PlayerMovement>().StartCoroutine(collision.gameObject.GetComponent<PlayerMovement>().PlayerParticles(collision.gameObject.GetComponent<PlayerMovement>().blood));
                     collision.gameObject.GetComponent<PlayerMovement>().sprite.Die();
                     collision.gameObject.GetComponent<PlayerMovement>().dead = true;
                     collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
