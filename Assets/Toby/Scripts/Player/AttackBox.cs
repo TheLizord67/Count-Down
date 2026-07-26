@@ -5,8 +5,11 @@ using static UnityEngine.GraphicsBuffer;
 public class AttackBox : MonoBehaviour
 {
     [SerializeField] private PlayerMovement player;
+    [SerializeField] private ScreenShake screenShake;
+    [SerializeField] public float duration, magnitude;
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        screenShake = FindAnyObjectByType<ScreenShake>();
         if (collision.gameObject.CompareTag("Enemy") == true)
         {
             //particles
@@ -17,9 +20,12 @@ public class AttackBox : MonoBehaviour
                 player.currentRoom.InitalSpawn();
             }
             player.mainCam.GetComponent<CameraFollow>().kill = true;
-            KillCount.kills += 1;
-            KillCount kill = FindAnyObjectByType<KillCount>();
-            kill.UpdateAllRooms();
+            if (!collision.GetComponent<EnemyController>().doomed) { 
+                KillCount.kills += 1;
+                KillCount kill = FindAnyObjectByType<KillCount>();
+                kill.UpdateAllRooms();
+            }
+            screenShake.Shake(duration, magnitude);
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;
             collision.gameObject.GetComponent<EnemyController>().sprite.Die();
             collision.gameObject.GetComponent<EnemyController>().enabled = false;

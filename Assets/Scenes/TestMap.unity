@@ -27169,6 +27169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AttackBox
   player: {fileID: 839375312}
+  screenShake: {fileID: 0}
+  duration: 0
+  magnitude: 0
 --- !u!1 &377807145
 GameObject:
   m_ObjectHideFlags: 0
@@ -38727,6 +38730,9 @@ MonoBehaviour:
   emo: {fileID: 1236297119}
   globalVolume: {fileID: 1802756610}
   killStreak: 0
+  duration: 0
+  magnitude: 0
+  screenShake: {fileID: 0}
 --- !u!4 &839375316
 Transform:
   m_ObjectHideFlags: 0
@@ -61942,6 +61948,7 @@ GameObject:
   - component: {fileID: 1521434043}
   - component: {fileID: 1521434046}
   - component: {fileID: 1521434047}
+  - component: {fileID: 1521434048}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -62093,6 +62100,18 @@ MonoBehaviour:
   maxX: 0
   minY: 0
   maxY: 0
+--- !u!114 &1521434048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521434042}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49a5eb1e45c939543a11c8e7b1ddd308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenShake
 --- !u!1 &1522139258
 GameObject:
   m_ObjectHideFlags: 0

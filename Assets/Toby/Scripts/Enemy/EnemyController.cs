@@ -54,6 +54,8 @@ public class EnemyController : MonoBehaviour
     [SerializeField] public GameObject chomp, torch, warning;
 
     [SerializeField] public bool ranged;
+
+    public bool doomed;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnDestroy()
     {
@@ -61,6 +63,7 @@ public class EnemyController : MonoBehaviour
     }
     void Start()
     {
+        doomed = false;
         KillCount.enemiesSpawnedGlobal += 1;
         speed = speed + KillCount.speedIncrease;
         attackStyle = attackStylesList[Random.Range(0, attackStylesList.Length)];
