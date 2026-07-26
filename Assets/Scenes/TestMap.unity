@@ -2818,6 +2818,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 15
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &133024273
 GameObject:
   m_ObjectHideFlags: 0
@@ -23773,6 +23774,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 10
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &232611727
 GameObject:
   m_ObjectHideFlags: 0
@@ -25687,6 +25689,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 10
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!4 &330670852 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3927821699871234332, guid: 6bbad3b08acb235468b248da1db1d103, type: 3}
@@ -41627,6 +41630,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 25
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &937606420
 GameObject:
   m_ObjectHideFlags: 0
@@ -47651,6 +47655,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 15
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &1150825318
 GameObject:
   m_ObjectHideFlags: 0
@@ -49661,6 +49666,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 20
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &1235668338
 GameObject:
   m_ObjectHideFlags: 0
@@ -60493,6 +60499,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 10
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &1474337099
 GameObject:
   m_ObjectHideFlags: 0
@@ -61237,6 +61244,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 25
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &1498411361
 GameObject:
   m_ObjectHideFlags: 0
@@ -81724,7 +81732,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_MaskInteraction: 0
   m_Sprite: {fileID: -5799073163254070570, guid: 25b6439e9f3682940b120abbad11dab7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -82107,6 +82115,7 @@ MonoBehaviour:
   enemiesToSpawn: 0
   spawnLimit: 10
   amountSpawned: 0
+  maxGlobalEnemies: 100
 --- !u!1 &2086443331
 GameObject:
   m_ObjectHideFlags: 0

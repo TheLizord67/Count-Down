@@ -17,7 +17,7 @@ public class RoomManager : MonoBehaviour
 
     [SerializeField] private float spawnSpeed;
 
-    [SerializeField] public int maxEnemiesToSpawn, minEnemiesToSpawn, enemiesToSpawn, spawnLimit, amountSpawned;
+    [SerializeField] public int maxEnemiesToSpawn, minEnemiesToSpawn, enemiesToSpawn, spawnLimit, amountSpawned, maxGlobalEnemies;
     void Start()
     {
         player = FindAnyObjectByType<PlayerMovement>();
@@ -40,7 +40,7 @@ public class RoomManager : MonoBehaviour
 
     public void Spawn()
     {
-        if (spawning && KillCount.enemiesSpawnedGlobal < 200)
+        if (spawning && KillCount.enemiesSpawnedGlobal < maxGlobalEnemies)
         {
             enemiesToSpawn = Random.Range(minEnemiesToSpawn, maxEnemiesToSpawn);
             for (int i = 0; i <= enemiesToSpawn; i++)
@@ -70,7 +70,7 @@ public class RoomManager : MonoBehaviour
     }
     public void InitalSpawn()
     {
-        if (KillCount.enemiesSpawnedGlobal < 200)
+        if (KillCount.enemiesSpawnedGlobal < maxGlobalEnemies)
         {
             enemiesToSpawn = Random.Range(minEnemiesToSpawn + 1, maxEnemiesToSpawn + 1);
             for (int i = 0; i <= enemiesToSpawn; i++)

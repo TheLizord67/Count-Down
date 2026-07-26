@@ -291,6 +291,15 @@ public class PlayerMovement : MonoBehaviour
     {
         target.GetComponent<EnemyController>().chomp.SetActive(true);
         mainCam.GetComponent<CameraFollow>().kill = true;
+        KillCount.kills += 1;
+        KillCount kill = FindAnyObjectByType<KillCount>();
+        kill.UpdateAllRooms();
+        target.GetComponent<EnemyController>().seeker.enabled = false;
+        target.GetComponent<EnemyController>().chomp.SetActive(false);
+        target.GetComponent<EnemyController>().sprite.Die();
+        target.GetComponent<EnemyController>().enabled = false;
+        target.GetComponent<CapsuleCollider2D>().enabled = false;
+        target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
         yield return new WaitForSeconds(animWaitTime);
         currentRoom.amountSpawned -= 1;
         if (currentRoom.amountSpawned < 0)
@@ -298,17 +307,8 @@ public class PlayerMovement : MonoBehaviour
             currentRoom.amountSpawned = 0;
             currentRoom.InitalSpawn();
         }
-        KillCount.kills += 1;
-        KillCount kill = FindAnyObjectByType<KillCount>();
-        kill.UpdateAllRooms();
         canAttack = true;
         canDash = true;
-        target.GetComponent<EnemyController>().seeker.enabled = false;
-        target.GetComponent<EnemyController>().chomp.SetActive(false);
-        target.GetComponent<EnemyController>().sprite.Die();
-        target.GetComponent<EnemyController>().enabled = false;
-        target.GetComponent<CapsuleCollider2D>().enabled = false;
-        target.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
     }
     public IEnumerator IFrames()
     {
