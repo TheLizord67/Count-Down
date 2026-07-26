@@ -5,7 +5,6 @@ using static UnityEngine.GraphicsBuffer;
 public class AttackBox : MonoBehaviour
 {
     [SerializeField] private PlayerMovement player;
-    [SerializeField] private UnityEvent killEvent;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy") == true)
@@ -19,7 +18,6 @@ public class AttackBox : MonoBehaviour
             }
             player.mainCam.GetComponent<CameraFollow>().kill = true;
             KillCount.kills += 1;
-            killEvent.Invoke();
             KillCount kill = FindAnyObjectByType<KillCount>();
             kill.UpdateAllRooms();
             collision.gameObject.GetComponent<EnemyController>().seeker.enabled = false;

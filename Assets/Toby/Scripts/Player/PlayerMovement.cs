@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public float vampAdditionalSpeed;
 
-    [SerializeField] private UnityEvent killEvent;
-
     private Vector2 _movement;
 
     private Rigidbody2D rb;
@@ -76,7 +74,6 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
         switchForm.StartSequence();
-        killEvent.AddListener(SpeedIncrease);
     }
 
     // Update is called once per frame
@@ -298,7 +295,6 @@ public class PlayerMovement : MonoBehaviour
             currentRoom.InitalSpawn();
         }
         KillCount.kills += 1;
-        killEvent.Invoke();
         KillCount kill = FindAnyObjectByType<KillCount>();
         kill.UpdateAllRooms();
         canAttack = true;
