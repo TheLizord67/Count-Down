@@ -29,12 +29,12 @@ public class RoomManager : MonoBehaviour
     {
         if (player.currentRoom == this)
         {
-           spawning = false;
-            amountSpawned = 0;
+           spawning = true;
         }
         else
         {
-            spawning = true;
+           //spawning = false;
+           amountSpawned = 0;
         }
     }
 
