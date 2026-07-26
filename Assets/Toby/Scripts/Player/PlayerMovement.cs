@@ -59,11 +59,13 @@ public class PlayerMovement : MonoBehaviour
 
     public void Hurt()
     {
-        vignetteEffect.intensity.value = 0.7f;
-        hp -= 1;
-        Destroy(hearts[0].gameObject);
-        hearts.Remove(hearts[0]);
-        StartCoroutine(IFrames());
+        if (currentForm == Forms.Chicken) { 
+            vignetteEffect.intensity.value = 0.7f;
+            hp -= 1;
+            Destroy(hearts[0].gameObject);
+            hearts.Remove(hearts[0]);
+            StartCoroutine(IFrames());
+        }
     }
     void Awake()
     {
