@@ -10,10 +10,13 @@ public class UIButtons : MonoBehaviour
     [SerializeField] private Animator credits;
     [SerializeField] private TextMeshProUGUI killText;
     [SerializeField] private TextMeshProUGUI killText2;
+    [SerializeField] private TextMeshProUGUI killStreakText;
     [SerializeField] private bool reg;
+    private PlayerMovement player;
     void Start()
     {
         killText.text = PlayerPrefs.GetInt("Max Kills").ToString();
+        player = FindAnyObjectByType<PlayerMovement>();
     }
 
     void Update()
@@ -21,7 +24,9 @@ public class UIButtons : MonoBehaviour
         if (reg)
         {
             killText2.text = KillCount.kills.ToString();
+            killStreakText.text = player.killStreak.ToString();
         }
+
     }
     public void LoadScene(Animator animator)
     {

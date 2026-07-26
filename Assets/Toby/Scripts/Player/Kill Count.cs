@@ -10,6 +10,7 @@ public class KillCount : MonoBehaviour
     [SerializeField] public List<RoomManager> rooms;
     private PlayerMovement player;
     private KillCountJuice killCountJuice;
+    private KillStreakJuice killStreakJuice;
 
     [SerializeField] public UnityEvent killEvent;
 
@@ -28,6 +29,7 @@ public class KillCount : MonoBehaviour
         kills = 0;
         player = FindAnyObjectByType<PlayerMovement>();
         killCountJuice = FindAnyObjectByType<KillCountJuice>();
+        killStreakJuice = FindAnyObjectByType<KillStreakJuice>();
         RoomManager[] r = FindObjectsByType<RoomManager>();
         foreach (var r2 in r)
         {
@@ -36,6 +38,7 @@ public class KillCount : MonoBehaviour
         // KILL EVENT LISTENERS
         killEvent.AddListener(player.SpeedIncrease);
         killEvent.AddListener(killCountJuice.Inflate);
+        killEvent.AddListener(killStreakJuice.Inflate);
     }
     public void UpdateAllRooms()
     {

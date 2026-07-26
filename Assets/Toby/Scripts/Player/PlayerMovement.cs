@@ -54,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] public Volume globalVolume;
 
+    public int killStreak;
+
     private Vignette vignetteEffect;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
@@ -338,11 +340,13 @@ public class PlayerMovement : MonoBehaviour
     {
         vampAdditionalSpeed = 0;
         Debug.Log("count down called");
+        killStreak = 0;
     }
 
     public void SpeedIncrease()
     {
         Debug.Log("kill event called");
         vampAdditionalSpeed += speedIncrease;
+        killStreak++;
     }
 }
